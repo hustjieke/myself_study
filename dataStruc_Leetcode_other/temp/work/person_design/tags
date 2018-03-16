@@ -1,0 +1,173 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Athlete	include/athletes.h	/^        Athlete() {}$/;"	f	class:Athlete
+Athlete	include/athletes.h	/^        Athlete(const Athlete& obj) : Human(obj) {$/;"	f	class:Athlete
+Athlete	include/athletes.h	/^        Athlete(string name_t, int age_t, string ID_t, bool gender_t,$/;"	f	class:Athlete
+Athlete	include/athletes.h	/^class Athlete : public Human {$/;"	c
+BasketballPlayer	include/basketball_player.h	/^		BasketballPlayer() {}$/;"	f	class:BasketballPlayer
+BasketballPlayer	include/basketball_player.h	/^		BasketballPlayer(const BasketballPlayer& obj) : Athlete(obj) {$/;"	f	class:BasketballPlayer
+BasketballPlayer	include/basketball_player.h	/^		BasketballPlayer(string name_t, int age_t, string ID_t, bool gender_t,$/;"	f	class:BasketballPlayer
+BasketballPlayer	include/basketball_player.h	/^class BasketballPlayer : public Athlete {$/;"	c
+CXX	makefile	/^CXX=g++$/;"	m
+CXXFLAGS	makefile	/^CXXFLAGS=-O0 -g -Wall -fmessage-length=0 -Iperson_job -Iinclude$/;"	m
+EXEC	makefile	/^EXEC=app$/;"	m
+Firemen	include/firemen.h	/^        Firemen() {}$/;"	f	class:Firemen
+Firemen	include/firemen.h	/^        Firemen(const Firemen& obj) : Human(obj) {$/;"	f	class:Firemen
+Firemen	include/firemen.h	/^        Firemen(string name_t, int age_t, string ID_t, bool gender_t, string $/;"	f	class:Firemen
+Firemen	include/firemen.h	/^class Firemen : public Human {$/;"	c
+FootballPlayer	include/football_player.h	/^		FootballPlayer(const FootballPlayer& obj) : Athlete(obj) {$/;"	f	class:FootballPlayer
+FootballPlayer	include/football_player.h	/^        FootballPlayer() {}$/;"	f	class:FootballPlayer
+FootballPlayer	include/football_player.h	/^        FootballPlayer(string name_t, int age_t, string ID_t, bool gender_t,$/;"	f	class:FootballPlayer
+FootballPlayer	include/football_player.h	/^class FootballPlayer : public Athlete {$/;"	c
+Human	include/human.h	/^        Human() {};$/;"	f	class:Human
+Human	include/human.h	/^        Human(const Human& obj)$/;"	f	class:Human
+Human	include/human.h	/^        Human(string name_t, int age_t, string ID_t, bool gender_t, $/;"	f	class:Human
+Human	include/human.h	/^class Human {$/;"	c
+Manipulator	include/manipulator.h	/^        Manipulator() {}$/;"	f	class:Manipulator
+Manipulator	include/manipulator.h	/^        Manipulator(string name_t):m_name(name_t) {}$/;"	f	class:Manipulator
+Manipulator	include/manipulator.h	/^class Manipulator{$/;"	c
+MidSchoolStu	include/mid_school_stu.h	/^		MidSchoolStu() {}$/;"	f	class:MidSchoolStu
+MidSchoolStu	include/mid_school_stu.h	/^		MidSchoolStu(const MidSchoolStu& obj) : Student(obj) {}$/;"	f	class:MidSchoolStu
+MidSchoolStu	include/mid_school_stu.h	/^		MidSchoolStu(string name_t, int age_t, string ID_t, bool gender_t,$/;"	f	class:MidSchoolStu
+MidSchoolStu	include/mid_school_stu.h	/^class MidSchoolStu : public Student {$/;"	c
+OBJS	makefile	/^OBJS=$(patsubst %.cpp,%.o,$(SRCS))$/;"	m
+PERSON_DESIGN_INCLUDE_ATHLETE_H_	include/athletes.h	13;"	d
+PERSON_DESIGN_INCLUDE_BASKETBALL_PLAYER_H_	include/basketball_player.h	14;"	d
+PERSON_DESIGN_INCLUDE_FIREMEN_H_	include/firemen.h	14;"	d
+PERSON_DESIGN_INCLUDE_FOOTBALL_PLAYER_H_	include/football_player.h	14;"	d
+PERSON_DESIGN_INCLUDE_HUMAN_H_	include/human.h	13;"	d
+PERSON_DESIGN_INCLUDE_JUDGE_STRING_H_	include/judge_string.h	6;"	d
+PERSON_DESIGN_INCLUDE_MANIPULATORS_H_	include/manipulator.h	14;"	d
+PERSON_DESIGN_INCLUDE_MID_SCHOOL_STU_H_	include/mid_school_stu.h	4;"	d
+PERSON_DESIGN_INCLUDE_ONE_HUNDRED_M_RUNNERS_H_	include/one_hundred_m_runner.h	14;"	d
+PERSON_DESIGN_INCLUDE_PILOT_H_	include/pilot.h	13;"	d
+PERSON_DESIGN_INCLUDE_STUDENT_H_	include/student.h	14;"	d
+PERSON_DESIGN_INCLUDE_UNIVERSITY_STU_H_	include/university_stu.h	4;"	d
+Pilot	include/pilot.h	/^        Pilot() {}$/;"	f	class:Pilot
+Pilot	include/pilot.h	/^        Pilot(const Pilot& obj) : Human(obj) {$/;"	f	class:Pilot
+Pilot	include/pilot.h	/^        Pilot(string name_t, int age_t, string ID_t, bool gender_t,$/;"	f	class:Pilot
+Pilot	include/pilot.h	/^class Pilot : public Human {$/;"	c
+Runners	include/one_hundred_m_runner.h	/^		Runners(const Runners& obj) : Athlete(obj) {$/;"	f	class:Runners
+Runners	include/one_hundred_m_runner.h	/^        Runners() {}$/;"	f	class:Runners
+Runners	include/one_hundred_m_runner.h	/^        Runners(string name_t, int age_t, string ID_t, bool gender_t,$/;"	f	class:Runners
+Runners	include/one_hundred_m_runner.h	/^class Runners : public Athlete {$/;"	c
+SRCS	makefile	/^SRCS=$(wildcard .\/src\/*.cpp) $/;"	m
+Student	include/student.h	/^		Student(const Student& obj) : m_school(obj.m_school),$/;"	f	class:Student
+Student	include/student.h	/^        Student() {};$/;"	f	class:Student
+Student	include/student.h	/^        Student(string name_t, int age_t, string ID_t, bool gender_t, $/;"	f	class:Student
+Student	include/student.h	/^class Student : public Human {$/;"	c
+UniversityStu	include/university_stu.h	/^		UniversityStu() {}$/;"	f	class:UniversityStu
+UniversityStu	include/university_stu.h	/^		UniversityStu(const UniversityStu& obj) : Student(obj) {}$/;"	f	class:UniversityStu
+UniversityStu	include/university_stu.h	/^		UniversityStu(string name_t, int age_t, string ID_t, bool gender_t,$/;"	f	class:UniversityStu
+UniversityStu	include/university_stu.h	/^class UniversityStu : public Student {$/;"	c
+doAction	src/basketball_player.cpp	/^void BasketballPlayer::doAction() const {$/;"	f	class:BasketballPlayer
+doAction	src/firemen.cpp	/^void Firemen::doAction() const {$/;"	f	class:Firemen
+doAction	src/football_player.cpp	/^void FootballPlayer::doAction() const {$/;"	f	class:FootballPlayer
+doAction	src/mid_school_stu.cpp	/^void MidSchoolStu::doAction() const {$/;"	f	class:MidSchoolStu
+doAction	src/one_hundred_m_runner.cpp	/^void Runners::doAction() const {$/;"	f	class:Runners
+doAction	src/pilot.cpp	/^void Pilot::doAction() const {$/;"	f	class:Pilot
+doAction	src/university_stu.cpp	/^void UniversityStu::doAction() const {$/;"	f	class:UniversityStu
+doSport	src/basketball_player.cpp	/^void BasketballPlayer::doSport() const {$/;"	f	class:BasketballPlayer
+doSport	src/football_player.cpp	/^void FootballPlayer::doSport() const {$/;"	f	class:FootballPlayer
+doSport	src/one_hundred_m_runner.cpp	/^void Runners::doSport() const {$/;"	f	class:Runners
+drivePlane	src/pilot.cpp	/^void Pilot::drivePlane() const {$/;"	f	class:Pilot
+eat	src/human.cpp	/^void Human::eat() const { cout << "I am eating rice!" << endl; }$/;"	f	class:Human
+entertain	src/basketball_player.cpp	/^void BasketballPlayer::entertain() const {$/;"	f	class:BasketballPlayer
+entertain	src/firemen.cpp	/^void Firemen::entertain() const {$/;"	f	class:Firemen
+entertain	src/football_player.cpp	/^void FootballPlayer::entertain() const {$/;"	f	class:FootballPlayer
+entertain	src/one_hundred_m_runner.cpp	/^void Runners::entertain() const { $/;"	f	class:Runners
+entertain	src/pilot.cpp	/^void Pilot::entertain() const {$/;"	f	class:Pilot
+entertain	src/student.cpp	/^void Student::entertain() const {$/;"	f	class:Student
+exam	src/mid_school_stu.cpp	/^void MidSchoolStu::exam() const {$/;"	f	class:MidSchoolStu
+exam	src/university_stu.cpp	/^void UniversityStu::exam() const {$/;"	f	class:UniversityStu
+judgeString	src/judge_string.cpp	/^void judgeString(string temp_str) {$/;"	f
+m_ID	include/human.h	/^        string m_ID;$/;"	m	class:Human
+m_age	include/human.h	/^        int  m_age;$/;"	m	class:Human
+m_airline_comp	include/pilot.h	/^        string m_airline_comp; \/\/ which company belong to$/;"	m	class:Pilot
+m_club	include/basketball_player.h	/^		string m_club;$/;"	m	class:BasketballPlayer
+m_club	include/football_player.h	/^        string m_club;$/;"	m	class:FootballPlayer
+m_fire_station	include/firemen.h	/^        string m_fire_station;$/;"	m	class:Firemen
+m_gender	include/human.h	/^        bool m_gender;$/;"	m	class:Human
+m_grade	include/student.h	/^        string m_grade;$/;"	m	class:Student
+m_model_drived	include/pilot.h	/^        string m_model_drived; \/\/ Aircraft Model drived$/;"	m	class:Pilot
+m_name	include/human.h	/^        string m_name;$/;"	m	class:Human
+m_name	include/manipulator.h	/^        string m_name;$/;"	m	class:Manipulator
+m_profession	include/human.h	/^        string m_profession;$/;"	m	class:Human
+m_salaries	include/athletes.h	/^        double m_salaries;$/;"	m	class:Athlete
+m_salaries	include/firemen.h	/^        double m_salaries;$/;"	m	class:Firemen
+m_salaries	include/pilot.h	/^        double m_salaries;$/;"	m	class:Pilot
+m_school	include/student.h	/^        string m_school;$/;"	m	class:Student
+m_student_ID	include/student.h	/^        string m_student_ID;$/;"	m	class:Student
+m_training_years	include/athletes.h	/^        int m_training_years;$/;"	m	class:Athlete
+m_years_of_service	include/firemen.h	/^        int  m_years_of_service;$/;"	m	class:Firemen
+main	src/main.cpp	/^int main()$/;"	f
+obj_count	include/human.h	/^        static int obj_count; $/;"	m	class:Human
+obj_count	src/human.cpp	/^int Human::obj_count = 0;$/;"	m	class:Human	file:
+operator =	include/athletes.h	/^        Athlete& operator=(const Athlete& obj) {$/;"	f	class:Athlete
+operator =	include/firemen.h	/^        Firemen& operator=(const Firemen& obj) {$/;"	f	class:Firemen
+operator =	include/football_player.h	/^		FootballPlayer& operator=(const FootballPlayer& obj) {$/;"	f	class:FootballPlayer
+operator =	include/human.h	/^        Human& operator=(const Human& obj) {$/;"	f	class:Human
+operator =	include/mid_school_stu.h	/^		MidSchoolStu& operator=(const MidSchoolStu& obj) {$/;"	f	class:MidSchoolStu
+operator =	include/one_hundred_m_runner.h	/^		Runners& operator=(const Runners& obj) {$/;"	f	class:Runners
+operator =	include/pilot.h	/^        Pilot& operator=(const Pilot& obj) {$/;"	f	class:Pilot
+operator =	include/student.h	/^		Student& operator=(const Student& obj) {$/;"	f	class:Student
+operator =	include/university_stu.h	/^		UniversityStu& operator=(const UniversityStu& obj) {$/;"	f	class:UniversityStu
+play	src/manipulator.cpp	/^void Manipulator::play(const Human *p) {$/;"	f	class:Manipulator
+putOutFire	src/firemen.cpp	/^void Firemen::putOutFire() const {$/;"	f	class:Firemen
+selfIntroduction	src/basketball_player.cpp	/^void BasketballPlayer::selfIntroduction() const {$/;"	f	class:BasketballPlayer
+selfIntroduction	src/firemen.cpp	/^void Firemen::selfIntroduction() const {$/;"	f	class:Firemen
+selfIntroduction	src/football_player.cpp	/^void FootballPlayer::selfIntroduction() const {$/;"	f	class:FootballPlayer
+selfIntroduction	src/mid_school_stu.cpp	/^void MidSchoolStu::selfIntroduction() const {$/;"	f	class:MidSchoolStu
+selfIntroduction	src/one_hundred_m_runner.cpp	/^void Runners::selfIntroduction() const {$/;"	f	class:Runners
+selfIntroduction	src/pilot.cpp	/^void Pilot::selfIntroduction() const {$/;"	f	class:Pilot
+selfIntroduction	src/university_stu.cpp	/^void UniversityStu::selfIntroduction() const {$/;"	f	class:UniversityStu
+setAge	src/firemen.cpp	/^void Firemen::setAge(const int& age_t) {$/;"	f	class:Firemen
+setAge	src/human.cpp	/^void Human::setAge(const int& age_t) {$/;"	f	class:Human
+setAge	src/pilot.cpp	/^void Pilot::setAge(const int& age_t) {$/;"	f	class:Pilot
+setAirlineComp	src/pilot.cpp	/^void Pilot::setAirlineComp(const string& airline_comp_t) {$/;"	f	class:Pilot
+setClub	src/basketball_player.cpp	/^void BasketballPlayer::setClub(string club_t) {$/;"	f	class:BasketballPlayer
+setClub	src/football_player.cpp	/^void FootballPlayer::setClub(string club_t) {$/;"	f	class:FootballPlayer
+setFireStation	src/firemen.cpp	/^void Firemen::setFireStation(const string& fire_station_t) {$/;"	f	class:Firemen
+setGender	src/human.cpp	/^void Human::setGender(const bool& gender_t) {$/;"	f	class:Human
+setGrade	src/student.cpp	/^void Student::setGrade(string grade_t) {$/;"	f	class:Student
+setID	src/human.cpp	/^void Human::setID(const string& ID_t) {$/;"	f	class:Human
+setModelDrived	src/pilot.cpp	/^void Pilot::setModelDrived(const string& model_drived_t) {$/;"	f	class:Pilot
+setName	src/human.cpp	/^void Human::setName(const string& name_t) {$/;"	f	class:Human
+setName	src/manipulator.cpp	/^void Manipulator::setName(string name_t) {$/;"	f	class:Manipulator
+setSalaries	src/basketball_player.cpp	/^void BasketballPlayer::setSalaries(const int& training_years_t) {$/;"	f	class:BasketballPlayer
+setSalaries	src/firemen.cpp	/^void Firemen::setSalaries(const int& m_age) {$/;"	f	class:Firemen
+setSalaries	src/football_player.cpp	/^void FootballPlayer::setSalaries(const int& training_years_t) {$/;"	f	class:FootballPlayer
+setSalaries	src/one_hundred_m_runner.cpp	/^void Runners::setSalaries(const int& training_years_t) {$/;"	f	class:Runners
+setSalaries	src/pilot.cpp	/^void Pilot::setSalaries(const int& age_t) {$/;"	f	class:Pilot
+setSchool	src/student.cpp	/^void Student::setSchool(string school_t) {$/;"	f	class:Student
+setStudentID	src/student.cpp	/^void Student::setStudentID(string student_ID_t) {$/;"	f	class:Student
+setTrainingYears	src/basketball_player.cpp	/^void BasketballPlayer::setTrainingYears(const int& training_years_t) {$/;"	f	class:BasketballPlayer
+setTrainingYears	src/football_player.cpp	/^void FootballPlayer::setTrainingYears(const int& training_years_t) {$/;"	f	class:FootballPlayer
+setTrainingYears	src/one_hundred_m_runner.cpp	/^void Runners::setTrainingYears(const int& training_years_t) {$/;"	f	class:Runners
+setYearsOfService	src/firemen.cpp	/^void Firemen::setYearsOfService(const int& years_of_service_t) {$/;"	f	class:Firemen
+sleep	src/basketball_player.cpp	/^void BasketballPlayer::sleep() const {$/;"	f	class:BasketballPlayer
+sleep	src/firemen.cpp	/^void Firemen::sleep() const {$/;"	f	class:Firemen
+sleep	src/football_player.cpp	/^void FootballPlayer::sleep() const {$/;"	f	class:FootballPlayer
+sleep	src/mid_school_stu.cpp	/^void MidSchoolStu::sleep() const {$/;"	f	class:MidSchoolStu
+sleep	src/one_hundred_m_runner.cpp	/^void Runners::sleep() const { $/;"	f	class:Runners
+sleep	src/pilot.cpp	/^void Pilot::sleep() const {$/;"	f	class:Pilot
+sleep	src/university_stu.cpp	/^void UniversityStu::sleep() const {$/;"	f	class:UniversityStu
+study	src/mid_school_stu.cpp	/^void MidSchoolStu::study() const {$/;"	f	class:MidSchoolStu
+study	src/university_stu.cpp	/^void UniversityStu::study() const {$/;"	f	class:UniversityStu
+telepathicFunction	src/human.cpp	/^void Human::telepathicFunction() {$/;"	f	class:Human
+train	src/basketball_player.cpp	/^void BasketballPlayer::train() const {$/;"	f	class:BasketballPlayer
+train	src/football_player.cpp	/^void FootballPlayer::train() const {$/;"	f	class:FootballPlayer
+train	src/one_hundred_m_runner.cpp	/^void Runners::train() const {$/;"	f	class:Runners
+~Athlete	include/athletes.h	/^        ~Athlete() {}$/;"	f	class:Athlete
+~BasketballPlayer	include/basketball_player.h	/^		~BasketballPlayer() {}$/;"	f	class:BasketballPlayer
+~Firemen	include/firemen.h	/^        ~Firemen() {}$/;"	f	class:Firemen
+~FootballPlayer	include/football_player.h	/^        ~FootballPlayer() {}$/;"	f	class:FootballPlayer
+~Human	include/human.h	/^        virtual ~Human() { obj_count--; }$/;"	f	class:Human
+~Manipulator	include/manipulator.h	/^        ~Manipulator() {}$/;"	f	class:Manipulator
+~Pilot	include/pilot.h	/^        ~Pilot() {}$/;"	f	class:Pilot
+~Runners	include/one_hundred_m_runner.h	/^        ~Runners() {}$/;"	f	class:Runners
+~Student	include/student.h	/^        ~Student() {}$/;"	f	class:Student

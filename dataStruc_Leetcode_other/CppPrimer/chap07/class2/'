@@ -1,0 +1,8 @@
+//string的size_type来源于allocator< charT >或者make_unsigned< difference_type >，两者均是无符号整形（不仅是unsigned int，而是包括unsigned//long、unsigned long long等整个整形类别），其最大值及最小值可通过std::numeric_limits<  std::string::size_type >::max(  )和std::numeric_l
+//imits< std::string::size_type >::min( )获得
+
+class Screen
+{
+	public:
+		typedef std::string::size_type pos;
+}

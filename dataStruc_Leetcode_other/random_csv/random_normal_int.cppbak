@@ -1,0 +1,75 @@
+#include <cmath>
+#include <random>
+#include <iostream>
+#include <fstream>
+#include <sstream>
+
+class intCsv {
+    public:
+        intCsv(std::string file, int64_t rows, int64_t cols, bool hasDelimiter = false) : m_file(file),
+        m_rows(rows), m_cols(cols), m_hasDelimiter(hasDelimiter) { }
+
+        ~intCsv() { }
+    public:
+        void generateNorm() {
+            std::normal_distribution<> num(595555499, 1.5);
+            std::default_random_engine e;  // generate random value
+
+            std::ofstream fIntOut;
+            fIntOut.open(m_file, std::ios_base::out);
+            
+            while (m_fileLines--) {
+                std::ostringstream os_int;
+                std::string Delimiter = "\"";
+
+                for (size_t col = 0; col < m_cols; col++) {
+                    unsigned int _num = lround(num(e));
+                    if (m_hasDelimiter) {
+                        os_int << Delimiter << _num << Delimiter;
+                        if ((m_cols-1) == col) {
+                            os_int << "\n";
+                            break;
+                        } else {  // add ","
+                            os_int << ",";
+                        }
+                    } else {
+                        os_int << _num;
+                        if ((m_cols-1) == col) {
+                            os_int << "\n";
+                            break;
+                        } else {  // add ","
+                            os_int << ",";
+                        }
+                    }  // if end
+                }  // for end
+            }  // while end
+        }
+        // void generateOthers();
+        
+    private:
+        intCsv() { }
+
+    private:
+        std::string m_file;
+        int64_t m_rows;
+        int64_t m_cols;
+        bool m_hasDelimiter;
+};
+
+int main()
+{
+    int rows, cols;
+    cout << "enter a num for rows";
+    cin >> rows;
+    cout << "enter a num for cols";
+    cin >> cols;
+
+    cout << "file data generating:" << endl;
+
+    intCsv  intObjWithDeli("int_long_norm_has_deli.csv", rows, cols, true);
+    intCsv  intObjWithNoDeli("int_long_norm_no_deli.csv", rows, cols, false);
+    intObjWithDeli.generateNorm();
+    intObjWithNoDeli.generateNorm();
+
+    return 0;
+}

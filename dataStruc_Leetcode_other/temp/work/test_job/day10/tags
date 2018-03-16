@@ -1,0 +1,30 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ArrayCpy	SortTime.cpp	/^void SortTime::ArrayCpy()$/;"	f	class:SortTime
+BubbleSort	SortTime.cpp	/^void SortTime::BubbleSort()$/;"	f	class:SortTime
+HeapAdjust	SortTime.cpp	/^void HeapAdjust(int** arr, int index, int size)$/;"	f
+HeapSort	SortTime.cpp	/^void SortTime::HeapSort() $/;"	f	class:SortTime
+InsertSort	SortTime.cpp	/^void SortTime::InsertSort()$/;"	f	class:SortTime
+Print	SortTime.cpp	/^void SortTime::Print()$/;"	f	class:SortTime
+QSort	SortTime.cpp	/^void QSort(int** arr, int left, int right)$/;"	f
+QuickSort	SortTime.cpp	/^void SortTime::QuickSort()$/;"	f	class:SortTime
+RandInit	SortTime.cpp	/^void SortTime::RandInit()$/;"	f	class:SortTime
+SORTTIME_H_	SortTime.h	2;"	d
+ShellSort	SortTime.cpp	/^void SortTime::ShellSort() $/;"	f	class:SortTime
+SortTime	SortTime.h	/^		SortTime(int n)$/;"	f	class:SortTime
+SortTime	SortTime.h	/^class SortTime$/;"	c
+TimeEnd	SortTime.cpp	/^void SortTime::TimeEnd()$/;"	f	class:SortTime
+TimeStart	SortTime.h	/^		void TimeStart()$/;"	f	class:SortTime
+arr_num	SortTime.h	/^		int arr_num;$/;"	m	class:SortTime
+array	SortTime.h	/^		int *array;$/;"	m	class:SortTime
+array_init	SortTime.h	/^		int *array_init;$/;"	m	class:SortTime
+clean	SortTime.h	/^		void clean()$/;"	f	class:SortTime
+main	SortMain.cpp	/^int main()$/;"	f
+swap	SortTime.cpp	/^void swap(int& m, int& n)$/;"	f
+tm_end	SortTime.h	/^		struct timeval tm_end;$/;"	m	class:SortTime	typeref:struct:SortTime::timeval
+tm_start	SortTime.h	/^		struct timeval tm_start;$/;"	m	class:SortTime	typeref:struct:SortTime::timeval
+~SortTime	SortTime.h	/^		~SortTime()$/;"	f	class:SortTime

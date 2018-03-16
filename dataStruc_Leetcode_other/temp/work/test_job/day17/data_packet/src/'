@@ -1,0 +1,47 @@
+//
+
+
+#include <iostream>
+#include <vector>
+#include <functional>
+#include <algorithm>
+
+#include "../include/BakPacket.h"
+#include "../include/DataPacket.h"
+
+
+using namespace std;
+
+int main(int argc, char **argv)
+{
+	vector<DataPacket> 		data_vec; // save 1000 data_packet	
+	vector<BakPacket>		bak_vec;  // copy each element in data_pack
+	vector<int>::iterator 	iter;
+
+	// test
+	for (int i = 0; i < 10; i++)// 将1000换为10，测试通过
+	{
+		DataPacket 	data_pack(4096);
+		data_vec.push_back(data_pack);
+
+		//for (iter = (data_pack.i_vec).begin(); 
+		//		iter != (data_pack.i_vec).end(); iter++)
+		for (int j = 0; j < 4096; j++)
+		{
+			BakPacket 		temp_packet;
+			temp_packet.element_cpy(data_packet);
+			//temp_packet.i_num = *iter; // 后续还有其他三个的赋值
+			//bak_vec.push_back(temp_packet);	
+		}
+	}
+
+	stable_sort(bak_vec.begin(), bak_vec.end(), less<BakPacket>());
+
+	cout << "-----after sort ...." << endl;
+	for(unsigned i = 0; i < 50; i++)
+	{
+		cout << "i_num: " << bak_vec[i].i_num << endl;
+	}
+
+	return 0;
+}

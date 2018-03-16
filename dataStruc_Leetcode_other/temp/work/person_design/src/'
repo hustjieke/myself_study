@@ -1,0 +1,72 @@
+//===================================================================
+// Copyright(c) : 2016-20xx BONC.Inc
+// FileName     : pilot.h(UTF-8)
+// Summary      : define subclass(Pilot) inherited from parent(Human) 
+// Author       : Gaoriyao
+// Version      : v1.0
+// CreatTime    : 2016-5-22
+// Description  : Hello World in C++, Ansi-style
+// History      : #
+//===================================================================
+
+#ifndef PERSON_DESIGN_INCLUDE_PILOT_H_
+#define PERSON_DESIGN_INCLUDE_PILOT_H_
+
+#include "human.h"
+
+using namespace std;
+
+// ClassName: Athlete
+// Author   : Gaoriyaoi 
+// Brief    : inherited all menbers from Human ,define specific members
+//            belong to Pilot
+class Pilot : public Human {
+    public:
+        Pilot() {}
+
+        Pilot(string name_t, int age_t, string ID_t, bool gender_t,
+                string airline_comp_t, string model_drived_t)
+            :Human(name_t, age_t, ID_t, gender_t), airline_comp(airline_comp_t),
+            model_drived(model_drived_t) {
+                salaries = 200 * age_t;
+            }
+
+        Pilot(const Pilot& obj) : Human(obj) {
+            airline_comp = obj.airline_comp;
+            model_drived = obj.model_drived;
+            salaries     = obj. salaries;
+        }
+
+        Pilot& operator=(const Pilot& obj) {
+            Human::operator=(obj);
+            airline_comp = obj.airline_comp;
+            model_drived = obj.model_drived;
+            salaries     = obj. salaries;
+
+            return *this;
+        }
+             
+        void setAirlineComp(string airline_comp_t);
+        void setModelDrived(string model_drived_t);
+        void setSalaries(double salaries_t);
+
+        // virtual inherited from Human
+        void sleep() const; // common action
+        void entertain() const; // common action
+
+        // action belong to Pilot
+        void drivePlane() const;
+
+        // virtual func, execute all behaviours that Pilot owned
+        void doAction() const;
+
+        ~Pilot() {}
+
+    private:
+        string airline_comp; // which company belong to
+        string model_drived; // Aircraft Model drived
+        double salaries;
+};
+
+
+#endif

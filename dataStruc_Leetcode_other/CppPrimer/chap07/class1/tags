@@ -1,0 +1,19 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+SALES_DATA_H_	Sales_data.h	2;"	d
+Sales_data	Sales_data.h	/^	Sales_data(){} \/\/ C++11标准可以用 = default;表示要求编译器来生成默认构造函数,在类内部这个函数就是内联的$/;"	f	struct:Sales_data
+Sales_data	Sales_data.h	/^	Sales_data(const std::string &s): bookNo(s) { }\/\/其他的没有没有传递参数的则使用默认初始化$/;"	f	struct:Sales_data
+Sales_data	Sales_data.h	/^	Sales_data(const std::string &s, unsigned n, double p)$/;"	f	struct:Sales_data
+Sales_data	Sales_data.h	/^struct Sales_data$/;"	s
+add	Sales_data.cpp	/^Sales_data add(const Sales_data &lhs, const Sales_data &rhs)$/;"	f
+bookNo	Sales_data.h	/^	string		bookNo;$/;"	m	struct:Sales_data
+combine	Sales_data.cpp	/^Sales_data& Sales_data::combine(const Sales_data &rhs)$/;"	f	class:Sales_data
+isbn	Sales_data.h	/^	string isbn() const { return bookNo; }$/;"	f	struct:Sales_data
+print	Sales_data.cpp	/^ostream& print(ostream &os, const Sales_data &item)$/;"	f
+read	Sales_data.cpp	/^istream& read(istream &is, Sales_data &item)$/;"	f
+revenue	Sales_data.h	/^	double 			revenue;$/;"	m	struct:Sales_data
+units_sold	Sales_data.h	/^	unsigned 		units_sold;$/;"	m	struct:Sales_data
