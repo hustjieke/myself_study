@@ -1,0 +1,62 @@
+leveldb: A key-value store
+Authors: Sanjay Ghemawat (sanjay@google.com) and Jeff Dean (jeff@google.com)
+
+The code under this directory implements a system for maintaining(维持) a
+persistent(永久的) key/value store(本义商店,这里扩展为引擎).
+
+See doc/index.html for more explanation.
+See doc/impl.html for a brief overview of the implementation.
+
+// 公共接口在 include/*.h,调用者不应该包含或者依赖于这个包中任何其他头文件的细节
+// 这些内部API可能会在没有警告的情况下更改(也就是说,接口不会变,实现细节可能会变)
+The public interface is in include/*.h.  Callers should not include or
+rely on the details of any other header files in this package.  Those
+internal APIs may be changed without warning.
+
+Guide to header files:
+
+include/db.h
+    Main interface to the DB: Start here(DB的主要接口,从这里开始)
+
+include/options.h
+    Control over the behavior of an entire database, and also
+    control over the behavior of individual reads and writes.
+    // 控制整个数据库的行为,并且还控制个人读写的行为
+
+include/comparator.h  (比较)
+    Abstraction for user-specified comparison function.  If you want
+    just bytewise comparison of keys, you can use the default comparator,
+    but clients can write their own comparator implementations if they
+    want custom ordering (e.g. to handle different character
+    encodings, etc.)
+    // 为用户指定的比较函数做一个抽象.如果你只想按键的字节比较,你可以使用默认的比较器
+    // 但如果客户需要自定义排序,客户可以编写自己的比较器实现
+
+include/iterator.h
+    Interface for iterating over data. You can get an iterator
+    from a DB object.
+    // 用于迭代数据的接口.你可以从一个DB对象中获得一个迭代器。
+
+include/write_batch.h
+    Interface for atomically applying multiple updates to a database.
+    // 自动应用多个更新到数据库的接口
+
+include/slice.h
+    A simple module for maintaining a pointer and a length into some
+    other byte array.
+    // 一个简单的模块,用于维护一个指针和一个其他字节数组的长度
+
+include/status.h
+    Status is returned from many of the public interfaces and is used
+    to report success and various kinds of errors.
+    // 状态是从许多公共接口返回的,用于报告成功和各种错误
+
+include/env.h
+    Abstraction of the OS environment.  A posix implementation of
+    this interface is in util/env_posix.cc
+    // 操作系统环境的抽象.这个接口的posix实现在util/env_posix.cc中
+
+include/table.h
+include/table_builder.h
+    Lower-level modules that most clients probably won't use directly
+    // 大多数客户端可能不会直接使用的底层模块

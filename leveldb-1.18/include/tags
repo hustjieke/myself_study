@@ -1,0 +1,185 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Cache	leveldb/cache.h	/^  Cache() { }$/;"	f	class:leveldb::Cache
+Cache	leveldb/cache.h	/^class Cache {$/;"	c	namespace:leveldb
+Cleanup	leveldb/iterator.h	/^  struct Cleanup {$/;"	s	class:leveldb::Iterator
+CleanupFunction	leveldb/iterator.h	/^  typedef void (*CleanupFunction)(void* arg1, void* arg2);$/;"	t	class:leveldb::Iterator
+Code	leveldb/status.h	/^  enum Code {$/;"	g	class:leveldb::Status
+Comparator	leveldb/comparator.h	/^class Comparator {$/;"	c	namespace:leveldb
+CompressionType	leveldb/options.h	/^enum CompressionType {$/;"	g	namespace:leveldb
+Corruption	leveldb/status.h	/^  static Status Corruption(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:leveldb::Status
+CreateDir	leveldb/env.h	/^  Status CreateDir(const std::string& d) { return target_->CreateDir(d); }$/;"	f	class:leveldb::EnvWrapper
+DB	leveldb/db.h	/^  DB() { }$/;"	f	class:leveldb::DB
+DB	leveldb/db.h	/^class DB {$/;"	c	namespace:leveldb
+DeleteDir	leveldb/env.h	/^  Status DeleteDir(const std::string& d) { return target_->DeleteDir(d); }$/;"	f	class:leveldb::EnvWrapper
+DeleteFile	leveldb/env.h	/^  Status DeleteFile(const std::string& f) { return target_->DeleteFile(f); }$/;"	f	class:leveldb::EnvWrapper
+Env	leveldb/env.h	/^  Env() { }$/;"	f	class:leveldb::Env
+Env	leveldb/env.h	/^class Env {$/;"	c	namespace:leveldb
+EnvWrapper	leveldb/env.h	/^  explicit EnvWrapper(Env* t) : target_(t) { }$/;"	f	class:leveldb::EnvWrapper
+EnvWrapper	leveldb/env.h	/^class EnvWrapper : public Env {$/;"	c	namespace:leveldb
+FileExists	leveldb/env.h	/^  bool FileExists(const std::string& f) { return target_->FileExists(f); }$/;"	f	class:leveldb::EnvWrapper
+FileLock	leveldb/env.h	/^  FileLock() { }$/;"	f	class:leveldb::FileLock
+FileLock	leveldb/env.h	/^class FileLock {$/;"	c	namespace:leveldb
+FilterPolicy	leveldb/filter_policy.h	/^class FilterPolicy {$/;"	c	namespace:leveldb
+GetChildren	leveldb/env.h	/^  Status GetChildren(const std::string& dir, std::vector<std::string>* r) {$/;"	f	class:leveldb::EnvWrapper
+GetFileSize	leveldb/env.h	/^  Status GetFileSize(const std::string& f, uint64_t* s) {$/;"	f	class:leveldb::EnvWrapper
+GetTestDirectory	leveldb/env.h	/^  virtual Status GetTestDirectory(std::string* path) {$/;"	f	class:leveldb::EnvWrapper
+Handle	leveldb/cache.h	/^  struct Handle { };$/;"	s	class:leveldb::Cache
+Handler	leveldb/write_batch.h	/^  class Handler {$/;"	c	class:leveldb::WriteBatch
+IOError	leveldb/status.h	/^  static Status IOError(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:leveldb::Status
+InvalidArgument	leveldb/status.h	/^  static Status InvalidArgument(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:leveldb::Status
+IsCorruption	leveldb/status.h	/^  bool IsCorruption() const { return code() == kCorruption; }$/;"	f	class:leveldb::Status
+IsIOError	leveldb/status.h	/^  bool IsIOError() const { return code() == kIOError; }$/;"	f	class:leveldb::Status
+IsNotFound	leveldb/status.h	/^  bool IsNotFound() const { return code() == kNotFound; }$/;"	f	class:leveldb::Status
+Iterator	leveldb/iterator.h	/^class Iterator {$/;"	c	namespace:leveldb
+LockFile	leveldb/env.h	/^  Status LockFile(const std::string& f, FileLock** l) {$/;"	f	class:leveldb::EnvWrapper
+Logger	leveldb/env.h	/^  Logger() { }$/;"	f	class:leveldb::Logger
+Logger	leveldb/env.h	/^class Logger {$/;"	c	namespace:leveldb
+NewLogger	leveldb/env.h	/^  virtual Status NewLogger(const std::string& fname, Logger** result) {$/;"	f	class:leveldb::EnvWrapper
+NewRandomAccessFile	leveldb/env.h	/^  Status NewRandomAccessFile(const std::string& f, RandomAccessFile** r) {$/;"	f	class:leveldb::EnvWrapper
+NewSequentialFile	leveldb/env.h	/^  Status NewSequentialFile(const std::string& f, SequentialFile** r) {$/;"	f	class:leveldb::EnvWrapper
+NewWritableFile	leveldb/env.h	/^  Status NewWritableFile(const std::string& f, WritableFile** r) {$/;"	f	class:leveldb::EnvWrapper
+NotFound	leveldb/status.h	/^  static Status NotFound(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:leveldb::Status
+NotSupported	leveldb/status.h	/^  static Status NotSupported(const Slice& msg, const Slice& msg2 = Slice()) {$/;"	f	class:leveldb::Status
+NowMicros	leveldb/env.h	/^  uint64_t NowMicros() {$/;"	f	class:leveldb::EnvWrapper
+OK	leveldb/status.h	/^  static Status OK() { return Status(); }$/;"	f	class:leveldb::Status
+Options	leveldb/options.h	/^struct Options {$/;"	s	namespace:leveldb
+RandomAccessFile	leveldb/env.h	/^  RandomAccessFile() { }$/;"	f	class:leveldb::RandomAccessFile
+RandomAccessFile	leveldb/env.h	/^class RandomAccessFile {$/;"	c	namespace:leveldb
+Range	leveldb/db.h	/^  Range() { }$/;"	f	struct:leveldb::Range
+Range	leveldb/db.h	/^  Range(const Slice& s, const Slice& l) : start(s), limit(l) { }$/;"	f	struct:leveldb::Range
+Range	leveldb/db.h	/^struct Range {$/;"	s	namespace:leveldb
+ReadOptions	leveldb/options.h	/^  ReadOptions()$/;"	f	struct:leveldb::ReadOptions
+ReadOptions	leveldb/options.h	/^struct ReadOptions {$/;"	s	namespace:leveldb
+RenameFile	leveldb/env.h	/^  Status RenameFile(const std::string& s, const std::string& t) {$/;"	f	class:leveldb::EnvWrapper
+STORAGE_LEVELDB_INCLUDE_CACHE_H_	leveldb/cache.h	19;"	d
+STORAGE_LEVELDB_INCLUDE_COMPARATOR_H_	leveldb/comparator.h	6;"	d
+STORAGE_LEVELDB_INCLUDE_C_H_	leveldb/c.h	41;"	d
+STORAGE_LEVELDB_INCLUDE_DB_H_	leveldb/db.h	6;"	d
+STORAGE_LEVELDB_INCLUDE_DUMPFILE_H_	leveldb/dumpfile.h	6;"	d
+STORAGE_LEVELDB_INCLUDE_ENV_H_	leveldb/env.h	14;"	d
+STORAGE_LEVELDB_INCLUDE_FILTER_POLICY_H_	leveldb/filter_policy.h	17;"	d
+STORAGE_LEVELDB_INCLUDE_ITERATOR_H_	leveldb/iterator.h	16;"	d
+STORAGE_LEVELDB_INCLUDE_OPTIONS_H_	leveldb/options.h	6;"	d
+STORAGE_LEVELDB_INCLUDE_SLICE_H_	leveldb/slice.h	16;"	d
+STORAGE_LEVELDB_INCLUDE_STATUS_H_	leveldb/status.h	14;"	d
+STORAGE_LEVELDB_INCLUDE_TABLE_BUILDER_H_	leveldb/table_builder.h	14;"	d
+STORAGE_LEVELDB_INCLUDE_TABLE_H_	leveldb/table.h	6;"	d
+STORAGE_LEVELDB_INCLUDE_WRITE_BATCH_H_	leveldb/write_batch.h	22;"	d
+Schedule	leveldb/env.h	/^  void Schedule(void (*f)(void*), void* a) {$/;"	f	class:leveldb::EnvWrapper
+SequentialFile	leveldb/env.h	/^  SequentialFile() { }$/;"	f	class:leveldb::SequentialFile
+SequentialFile	leveldb/env.h	/^class SequentialFile {$/;"	c	namespace:leveldb
+SleepForMicroseconds	leveldb/env.h	/^  void SleepForMicroseconds(int micros) {$/;"	f	class:leveldb::EnvWrapper
+Slice	leveldb/slice.h	/^  Slice() : data_(""), size_(0) { }$/;"	f	class:leveldb::Slice
+Slice	leveldb/slice.h	/^  Slice(const char* d, size_t n) : data_(d), size_(n) { }$/;"	f	class:leveldb::Slice
+Slice	leveldb/slice.h	/^  Slice(const char* s) : data_(s), size_(strlen(s)) { }$/;"	f	class:leveldb::Slice
+Slice	leveldb/slice.h	/^  Slice(const std::string& s) : data_(s.data()), size_(s.size()) { }$/;"	f	class:leveldb::Slice
+Slice	leveldb/slice.h	/^class Slice {$/;"	c	namespace:leveldb
+Snapshot	leveldb/db.h	/^class Snapshot {$/;"	c	namespace:leveldb
+StartThread	leveldb/env.h	/^  void StartThread(void (*f)(void*), void* a) {$/;"	f	class:leveldb::EnvWrapper
+Status	leveldb/status.h	/^  Status() : state_(NULL) { }$/;"	f	class:leveldb::Status
+Status	leveldb/status.h	/^class Status {$/;"	c	namespace:leveldb
+Status	leveldb/status.h	/^inline Status::Status(const Status& s) {$/;"	f	class:leveldb::Status
+Table	leveldb/table.h	/^  explicit Table(Rep* rep) { rep_ = rep; }$/;"	f	class:leveldb::Table
+Table	leveldb/table.h	/^class Table {$/;"	c	namespace:leveldb
+TableBuilder	leveldb/table_builder.h	/^class TableBuilder {$/;"	c	namespace:leveldb
+ToString	leveldb/slice.h	/^  std::string ToString() const { return std::string(data_, size_); }$/;"	f	class:leveldb::Slice
+UnlockFile	leveldb/env.h	/^  Status UnlockFile(FileLock* l) { return target_->UnlockFile(l); }$/;"	f	class:leveldb::EnvWrapper
+WritableFile	leveldb/env.h	/^  WritableFile() { }$/;"	f	class:leveldb::WritableFile
+WritableFile	leveldb/env.h	/^class WritableFile {$/;"	c	namespace:leveldb
+WriteBatch	leveldb/write_batch.h	/^class WriteBatch {$/;"	c	namespace:leveldb
+WriteOptions	leveldb/options.h	/^  WriteOptions()$/;"	f	struct:leveldb::WriteOptions
+WriteOptions	leveldb/options.h	/^struct WriteOptions {$/;"	s	namespace:leveldb
+arg1	leveldb/iterator.h	/^    void* arg1;$/;"	m	struct:leveldb::Iterator::Cleanup
+arg2	leveldb/iterator.h	/^    void* arg2;$/;"	m	struct:leveldb::Iterator::Cleanup
+block_cache	leveldb/options.h	/^  Cache* block_cache;$/;"	m	struct:leveldb::Options
+block_restart_interval	leveldb/options.h	/^  int block_restart_interval;$/;"	m	struct:leveldb::Options
+block_size	leveldb/options.h	/^  size_t block_size;$/;"	m	struct:leveldb::Options
+cleanup_	leveldb/iterator.h	/^  Cleanup cleanup_;$/;"	m	class:leveldb::Iterator
+clear	leveldb/slice.h	/^  void clear() { data_ = ""; size_ = 0; }$/;"	f	class:leveldb::Slice
+code	leveldb/status.h	/^  Code code() const {$/;"	f	class:leveldb::Status
+comparator	leveldb/options.h	/^  const Comparator* comparator;$/;"	m	struct:leveldb::Options
+compare	leveldb/slice.h	/^inline int Slice::compare(const Slice& b) const {$/;"	f	class:leveldb::Slice
+compression	leveldb/options.h	/^  CompressionType compression;$/;"	m	struct:leveldb::Options
+create_if_missing	leveldb/options.h	/^  bool create_if_missing;$/;"	m	struct:leveldb::Options
+data	leveldb/slice.h	/^  const char* data() const { return data_; }$/;"	f	class:leveldb::Slice
+data_	leveldb/slice.h	/^  const char* data_;$/;"	m	class:leveldb::Slice
+empty	leveldb/slice.h	/^  bool empty() const { return size_ == 0; }$/;"	f	class:leveldb::Slice
+env	leveldb/options.h	/^  Env* env;$/;"	m	struct:leveldb::Options
+error_if_exists	leveldb/options.h	/^  bool error_if_exists;$/;"	m	struct:leveldb::Options
+fill_cache	leveldb/options.h	/^  bool fill_cache;$/;"	m	struct:leveldb::ReadOptions
+filter_policy	leveldb/options.h	/^  const FilterPolicy* filter_policy;$/;"	m	struct:leveldb::Options
+function	leveldb/iterator.h	/^    CleanupFunction function;$/;"	m	struct:leveldb::Iterator::Cleanup
+info_log	leveldb/options.h	/^  Logger* info_log;$/;"	m	struct:leveldb::Options
+kCorruption	leveldb/status.h	/^    kCorruption = 2,$/;"	e	enum:leveldb::Status::Code
+kIOError	leveldb/status.h	/^    kIOError = 5$/;"	e	enum:leveldb::Status::Code
+kInvalidArgument	leveldb/status.h	/^    kInvalidArgument = 4,$/;"	e	enum:leveldb::Status::Code
+kMajorVersion	leveldb/db.h	/^static const int kMajorVersion = 1;$/;"	m	namespace:leveldb
+kMinorVersion	leveldb/db.h	/^static const int kMinorVersion = 18;$/;"	m	namespace:leveldb
+kNoCompression	leveldb/options.h	/^  kNoCompression     = 0x0,$/;"	e	enum:leveldb::CompressionType
+kNotFound	leveldb/status.h	/^    kNotFound = 1,$/;"	e	enum:leveldb::Status::Code
+kNotSupported	leveldb/status.h	/^    kNotSupported = 3,$/;"	e	enum:leveldb::Status::Code
+kOk	leveldb/status.h	/^    kOk = 0,$/;"	e	enum:leveldb::Status::Code
+kSnappyCompression	leveldb/options.h	/^  kSnappyCompression = 0x1$/;"	e	enum:leveldb::CompressionType
+leveldb	leveldb/cache.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/comparator.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/db.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/dumpfile.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/env.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/filter_policy.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/iterator.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/options.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/slice.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/status.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/table.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/table_builder.h	/^namespace leveldb {$/;"	n
+leveldb	leveldb/write_batch.h	/^namespace leveldb {$/;"	n
+leveldb_cache_t	leveldb/c.h	/^typedef struct leveldb_cache_t         leveldb_cache_t;$/;"	t	typeref:struct:leveldb_cache_t
+leveldb_comparator_t	leveldb/c.h	/^typedef struct leveldb_comparator_t    leveldb_comparator_t;$/;"	t	typeref:struct:leveldb_comparator_t
+leveldb_env_t	leveldb/c.h	/^typedef struct leveldb_env_t           leveldb_env_t;$/;"	t	typeref:struct:leveldb_env_t
+leveldb_filelock_t	leveldb/c.h	/^typedef struct leveldb_filelock_t      leveldb_filelock_t;$/;"	t	typeref:struct:leveldb_filelock_t
+leveldb_filterpolicy_t	leveldb/c.h	/^typedef struct leveldb_filterpolicy_t  leveldb_filterpolicy_t;$/;"	t	typeref:struct:leveldb_filterpolicy_t
+leveldb_iterator_t	leveldb/c.h	/^typedef struct leveldb_iterator_t      leveldb_iterator_t;$/;"	t	typeref:struct:leveldb_iterator_t
+leveldb_logger_t	leveldb/c.h	/^typedef struct leveldb_logger_t        leveldb_logger_t;$/;"	t	typeref:struct:leveldb_logger_t
+leveldb_no_compression	leveldb/c.h	/^  leveldb_no_compression = 0,$/;"	e	enum:__anon1
+leveldb_options_t	leveldb/c.h	/^typedef struct leveldb_options_t       leveldb_options_t;$/;"	t	typeref:struct:leveldb_options_t
+leveldb_randomfile_t	leveldb/c.h	/^typedef struct leveldb_randomfile_t    leveldb_randomfile_t;$/;"	t	typeref:struct:leveldb_randomfile_t
+leveldb_readoptions_t	leveldb/c.h	/^typedef struct leveldb_readoptions_t   leveldb_readoptions_t;$/;"	t	typeref:struct:leveldb_readoptions_t
+leveldb_seqfile_t	leveldb/c.h	/^typedef struct leveldb_seqfile_t       leveldb_seqfile_t;$/;"	t	typeref:struct:leveldb_seqfile_t
+leveldb_snappy_compression	leveldb/c.h	/^  leveldb_snappy_compression = 1$/;"	e	enum:__anon1
+leveldb_snapshot_t	leveldb/c.h	/^typedef struct leveldb_snapshot_t      leveldb_snapshot_t;$/;"	t	typeref:struct:leveldb_snapshot_t
+leveldb_t	leveldb/c.h	/^typedef struct leveldb_t               leveldb_t;$/;"	t	typeref:struct:leveldb_t
+leveldb_writablefile_t	leveldb/c.h	/^typedef struct leveldb_writablefile_t  leveldb_writablefile_t;$/;"	t	typeref:struct:leveldb_writablefile_t
+leveldb_writebatch_t	leveldb/c.h	/^typedef struct leveldb_writebatch_t    leveldb_writebatch_t;$/;"	t	typeref:struct:leveldb_writebatch_t
+leveldb_writeoptions_t	leveldb/c.h	/^typedef struct leveldb_writeoptions_t  leveldb_writeoptions_t;$/;"	t	typeref:struct:leveldb_writeoptions_t
+limit	leveldb/db.h	/^  Slice limit;          \/\/ Not included in the range$/;"	m	struct:leveldb::Range
+max_open_files	leveldb/options.h	/^  int max_open_files;$/;"	m	struct:leveldb::Options
+next	leveldb/iterator.h	/^    Cleanup* next;$/;"	m	struct:leveldb::Iterator::Cleanup
+ok	leveldb/status.h	/^  bool ok() const { return (state_ == NULL); }$/;"	f	class:leveldb::Status
+ok	leveldb/table_builder.h	/^  bool ok() const { return status().ok(); }$/;"	f	class:leveldb::TableBuilder
+operator !=	leveldb/slice.h	/^inline bool operator!=(const Slice& x, const Slice& y) {$/;"	f	namespace:leveldb
+operator =	leveldb/status.h	/^inline void Status::operator=(const Status& s) {$/;"	f	class:leveldb::Status
+operator ==	leveldb/slice.h	/^inline bool operator==(const Slice& x, const Slice& y) {$/;"	f	namespace:leveldb
+operator []	leveldb/slice.h	/^  char operator[](size_t n) const {$/;"	f	class:leveldb::Slice
+paranoid_checks	leveldb/options.h	/^  bool paranoid_checks;$/;"	m	struct:leveldb::Options
+remove_prefix	leveldb/slice.h	/^  void remove_prefix(size_t n) {$/;"	f	class:leveldb::Slice
+rep_	leveldb/cache.h	/^  Rep* rep_;$/;"	m	class:leveldb::Cache
+rep_	leveldb/table.h	/^  Rep* rep_;$/;"	m	class:leveldb::Table
+rep_	leveldb/table_builder.h	/^  Rep* rep_;$/;"	m	class:leveldb::TableBuilder
+rep_	leveldb/write_batch.h	/^  std::string rep_;  \/\/ See comment in write_batch.cc for the format of rep_$/;"	m	class:leveldb::WriteBatch
+size	leveldb/slice.h	/^  size_t size() const { return size_; }$/;"	f	class:leveldb::Slice
+size_	leveldb/slice.h	/^  size_t size_;$/;"	m	class:leveldb::Slice
+snapshot	leveldb/options.h	/^  const Snapshot* snapshot;$/;"	m	struct:leveldb::ReadOptions
+start	leveldb/db.h	/^  Slice start;          \/\/ Included in the range$/;"	m	struct:leveldb::Range
+starts_with	leveldb/slice.h	/^  bool starts_with(const Slice& x) const {$/;"	f	class:leveldb::Slice
+state_	leveldb/status.h	/^  const char* state_;$/;"	m	class:leveldb::Status
+sync	leveldb/options.h	/^  bool sync;$/;"	m	struct:leveldb::WriteOptions
+target	leveldb/env.h	/^  Env* target() const { return target_; }$/;"	f	class:leveldb::EnvWrapper
+target_	leveldb/env.h	/^  Env* target_;$/;"	m	class:leveldb::EnvWrapper
+verify_checksums	leveldb/options.h	/^  bool verify_checksums;$/;"	m	struct:leveldb::ReadOptions
+write_buffer_size	leveldb/options.h	/^  size_t write_buffer_size;$/;"	m	struct:leveldb::Options
+~Status	leveldb/status.h	/^  ~Status() { delete[] state_; }$/;"	f	class:leveldb::Status

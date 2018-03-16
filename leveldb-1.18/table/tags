@@ -1,0 +1,402 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Abandon	table_builder.cc	/^void TableBuilder::Abandon() {$/;"	f	class:leveldb::TableBuilder
+Add	block_builder.cc	/^void BlockBuilder::Add(const Slice& key, const Slice& value) {$/;"	f	class:leveldb::BlockBuilder
+Add	table_builder.cc	/^void TableBuilder::Add(const Slice& key, const Slice& value) {$/;"	f	class:leveldb::TableBuilder
+Add	table_test.cc	/^  void Add(const std::string& key, const Slice& value) {$/;"	f	class:leveldb::Constructor
+Add	table_test.cc	/^  void Add(const std::string& key, const std::string& value) {$/;"	f	class:leveldb::Harness
+AddKey	filter_block.cc	/^void FilterBlockBuilder::AddKey(const Slice& key) {$/;"	f	class:leveldb::FilterBlockBuilder
+Append	table_test.cc	/^  virtual Status Append(const Slice& data) {$/;"	f	class:leveldb::StringSink
+ApproximateOffsetOf	table.cc	/^uint64_t Table::ApproximateOffsetOf(const Slice& key) const {$/;"	f	class:leveldb::Table
+ApproximateOffsetOf	table_test.cc	/^  uint64_t ApproximateOffsetOf(const Slice& key) const {$/;"	f	class:leveldb::TableConstructor
+BLOCK_TEST	table_test.cc	/^  BLOCK_TEST,$/;"	e	enum:leveldb::TestType	file:
+Between	table_test.cc	/^static bool Between(uint64_t val, uint64_t low, uint64_t high) {$/;"	f	namespace:leveldb
+Block	block.cc	/^Block::Block(const BlockContents& contents)$/;"	f	class:leveldb::Block
+Block	block.h	/^class Block {$/;"	c	namespace:leveldb
+BlockBuilder	block_builder.cc	/^BlockBuilder::BlockBuilder(const Options* options)$/;"	f	class:leveldb::BlockBuilder
+BlockBuilder	block_builder.h	/^class BlockBuilder {$/;"	c	namespace:leveldb
+BlockConstructor	table_test.cc	/^  explicit BlockConstructor(const Comparator* cmp)$/;"	f	class:leveldb::BlockConstructor
+BlockConstructor	table_test.cc	/^class BlockConstructor: public Constructor {$/;"	c	namespace:leveldb	file:
+BlockContents	format.h	/^struct BlockContents {$/;"	s	namespace:leveldb
+BlockFunction	two_level_iterator.cc	/^typedef Iterator* (*BlockFunction)(void*, const ReadOptions&, const Slice&);$/;"	t	namespace:leveldb::__anon2	file:
+BlockHandle	format.h	/^class BlockHandle {$/;"	c	namespace:leveldb
+BlockHandle	format.h	/^inline BlockHandle::BlockHandle()$/;"	f	class:leveldb::BlockHandle
+BlockReader	table.cc	/^Iterator* Table::BlockReader(void* arg,$/;"	f	class:leveldb::Table
+ChangeOptions	table_builder.cc	/^Status TableBuilder::ChangeOptions(const Options& options) {$/;"	f	class:leveldb::TableBuilder
+Close	table_test.cc	/^  virtual Status Close() { return Status::OK(); }$/;"	f	class:leveldb::StringSink
+Compare	block.cc	/^  inline int Compare(const Slice& a, const Slice& b) const {$/;"	f	class:leveldb::Block::Iter	file:
+Compare	table_test.cc	/^  virtual int Compare(const Slice& a, const Slice& b) const {$/;"	f	class:leveldb::__anon4::ReverseKeyComparator
+Constructor	table_test.cc	/^  explicit Constructor(const Comparator* cmp) : data_(STLLessThan(cmp)) { }$/;"	f	class:leveldb::Constructor
+Constructor	table_test.cc	/^class Constructor {$/;"	c	namespace:leveldb	file:
+CorruptionError	block.cc	/^  void CorruptionError() {$/;"	f	class:leveldb::Block::Iter	file:
+CreateFilter	filter_block_test.cc	/^  virtual void CreateFilter(const Slice* keys, int n, std::string* dst) const {$/;"	f	class:leveldb::TestHashFilter
+CurrentSizeEstimate	block_builder.cc	/^size_t BlockBuilder::CurrentSizeEstimate() const {$/;"	f	class:leveldb::BlockBuilder
+DBConstructor	table_test.cc	/^  explicit DBConstructor(const Comparator* cmp)$/;"	f	class:leveldb::DBConstructor
+DBConstructor	table_test.cc	/^class DBConstructor: public Constructor {$/;"	c	namespace:leveldb	file:
+DB_TEST	table_test.cc	/^  DB_TEST$/;"	e	enum:leveldb::TestType	file:
+DecodeEntry	block.cc	/^static inline const char* DecodeEntry(const char* p, const char* limit,$/;"	f	namespace:leveldb
+DecodeFrom	format.cc	/^Status BlockHandle::DecodeFrom(Slice* input) {$/;"	f	class:leveldb::BlockHandle
+DecodeFrom	format.cc	/^Status Footer::DecodeFrom(Slice* input) {$/;"	f	class:leveldb::Footer
+DeleteBlock	table.cc	/^static void DeleteBlock(void* arg, void* ignored) {$/;"	f	namespace:leveldb
+DeleteCachedBlock	table.cc	/^static void DeleteCachedBlock(const Slice& key, void* value) {$/;"	f	namespace:leveldb
+Direction	merger.cc	/^  enum Direction {$/;"	g	class:leveldb::__anon3::MergingIterator	file:
+EmptyIterator	iterator.cc	/^  EmptyIterator(const Status& s) : status_(s) { }$/;"	f	class:leveldb::__anon1::EmptyIterator
+EmptyIterator	iterator.cc	/^class EmptyIterator : public Iterator {$/;"	c	namespace:leveldb::__anon1	file:
+EncodeTo	format.cc	/^void BlockHandle::EncodeTo(std::string* dst) const {$/;"	f	class:leveldb::BlockHandle
+EncodeTo	format.cc	/^void Footer::EncodeTo(std::string* dst) const {$/;"	f	class:leveldb::Footer
+FileSize	table_builder.cc	/^uint64_t TableBuilder::FileSize() const {$/;"	f	class:leveldb::TableBuilder
+FilterBlockBuilder	filter_block.cc	/^FilterBlockBuilder::FilterBlockBuilder(const FilterPolicy* policy)$/;"	f	class:leveldb::FilterBlockBuilder
+FilterBlockBuilder	filter_block.h	/^class FilterBlockBuilder {$/;"	c	namespace:leveldb
+FilterBlockReader	filter_block.cc	/^FilterBlockReader::FilterBlockReader(const FilterPolicy* policy,$/;"	f	class:leveldb::FilterBlockReader
+FilterBlockReader	filter_block.h	/^class FilterBlockReader {$/;"	c	namespace:leveldb
+FilterBlockTest	filter_block_test.cc	/^class FilterBlockTest {$/;"	c	namespace:leveldb	file:
+FindLargest	merger.cc	/^void MergingIterator::FindLargest() {$/;"	f	class:leveldb::__anon3::MergingIterator
+FindShortSuccessor	table_test.cc	/^  virtual void FindShortSuccessor(std::string* key) const {$/;"	f	class:leveldb::__anon4::ReverseKeyComparator
+FindShortestSeparator	table_test.cc	/^  virtual void FindShortestSeparator($/;"	f	class:leveldb::__anon4::ReverseKeyComparator
+FindSmallest	merger.cc	/^void MergingIterator::FindSmallest() {$/;"	f	class:leveldb::__anon3::MergingIterator
+Finish	block_builder.cc	/^Slice BlockBuilder::Finish() {$/;"	f	class:leveldb::BlockBuilder
+Finish	filter_block.cc	/^Slice FilterBlockBuilder::Finish() {$/;"	f	class:leveldb::FilterBlockBuilder
+Finish	table_builder.cc	/^Status TableBuilder::Finish() {$/;"	f	class:leveldb::TableBuilder
+Finish	table_test.cc	/^  void Finish(const Options& options,$/;"	f	class:leveldb::Constructor
+FinishImpl	table_test.cc	/^  virtual Status FinishImpl(const Options& options, const KVMap& data) {$/;"	f	class:leveldb::BlockConstructor
+FinishImpl	table_test.cc	/^  virtual Status FinishImpl(const Options& options, const KVMap& data) {$/;"	f	class:leveldb::DBConstructor
+FinishImpl	table_test.cc	/^  virtual Status FinishImpl(const Options& options, const KVMap& data) {$/;"	f	class:leveldb::MemTableConstructor
+FinishImpl	table_test.cc	/^  virtual Status FinishImpl(const Options& options, const KVMap& data) {$/;"	f	class:leveldb::TableConstructor
+Flush	table_builder.cc	/^void TableBuilder::Flush() {$/;"	f	class:leveldb::TableBuilder
+Flush	table_test.cc	/^  virtual Status Flush() { return Status::OK(); }$/;"	f	class:leveldb::StringSink
+Footer	format.h	/^  Footer() { }$/;"	f	class:leveldb::Footer
+Footer	format.h	/^class Footer {$/;"	c	namespace:leveldb
+GenerateFilter	filter_block.cc	/^void FilterBlockBuilder::GenerateFilter() {$/;"	f	class:leveldb::FilterBlockBuilder
+GetRestartPoint	block.cc	/^  uint32_t GetRestartPoint(uint32_t index) {$/;"	f	class:leveldb::Block::Iter	file:
+Harness	table_test.cc	/^  Harness() : constructor_(NULL) { }$/;"	f	class:leveldb::Harness
+Harness	table_test.cc	/^class Harness {$/;"	c	namespace:leveldb	file:
+Increment	table_test.cc	/^static void Increment(const Comparator* cmp, std::string* key) {$/;"	f	namespace:leveldb
+Init	table_test.cc	/^  void Init(const TestArgs& args) {$/;"	f	class:leveldb::Harness
+InitDataBlock	two_level_iterator.cc	/^void TwoLevelIterator::InitDataBlock() {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+InternalGet	table.cc	/^Status Table::InternalGet(const ReadOptions& options, const Slice& k,$/;"	f	class:leveldb::Table
+Iter	block.cc	/^  Iter(const Comparator* comparator,$/;"	f	class:leveldb::Block::Iter
+Iter	block.cc	/^class Block::Iter : public Iterator {$/;"	c	class:leveldb::Block	file:
+Iterator	iterator.cc	/^Iterator::Iterator() {$/;"	f	class:leveldb::Iterator
+IteratorWrapper	iterator_wrapper.h	/^  IteratorWrapper(): iter_(NULL), valid_(false) { }$/;"	f	class:leveldb::IteratorWrapper
+IteratorWrapper	iterator_wrapper.h	/^  explicit IteratorWrapper(Iterator* iter): iter_(NULL) {$/;"	f	class:leveldb::IteratorWrapper
+IteratorWrapper	iterator_wrapper.h	/^class IteratorWrapper {$/;"	c	namespace:leveldb
+KVMap	table_test.cc	/^typedef std::map<std::string, std::string, STLLessThan> KVMap;$/;"	t	namespace:leveldb	file:
+KeyConvertingIterator	table_test.cc	/^  explicit KeyConvertingIterator(Iterator* iter) : iter_(iter) { }$/;"	f	class:leveldb::KeyConvertingIterator
+KeyConvertingIterator	table_test.cc	/^class KeyConvertingIterator: public Iterator {$/;"	c	namespace:leveldb	file:
+KeyMayMatch	filter_block.cc	/^bool FilterBlockReader::KeyMayMatch(uint64_t block_offset, const Slice& key) {$/;"	f	class:leveldb::FilterBlockReader
+KeyMayMatch	filter_block_test.cc	/^  virtual bool KeyMayMatch(const Slice& key, const Slice& filter) const {$/;"	f	class:leveldb::TestHashFilter
+MEMTABLE_TEST	table_test.cc	/^  MEMTABLE_TEST,$/;"	e	enum:leveldb::TestType	file:
+MemTableConstructor	table_test.cc	/^  explicit MemTableConstructor(const Comparator* cmp)$/;"	f	class:leveldb::MemTableConstructor
+MemTableConstructor	table_test.cc	/^class MemTableConstructor: public Constructor {$/;"	c	namespace:leveldb	file:
+MemTableTest	table_test.cc	/^class MemTableTest { };$/;"	c	namespace:leveldb	file:
+MergingIterator	merger.cc	/^  MergingIterator(const Comparator* comparator, Iterator** children, int n)$/;"	f	class:leveldb::__anon3::MergingIterator
+MergingIterator	merger.cc	/^class MergingIterator : public Iterator {$/;"	c	namespace:leveldb::__anon3	file:
+Name	filter_block_test.cc	/^  virtual const char* Name() const {$/;"	f	class:leveldb::TestHashFilter
+Name	table_test.cc	/^  virtual const char* Name() const {$/;"	f	class:leveldb::__anon4::ReverseKeyComparator
+NewDB	table_test.cc	/^  void NewDB() {$/;"	f	class:leveldb::DBConstructor	file:
+NewEmptyIterator	iterator.cc	/^Iterator* NewEmptyIterator() {$/;"	f	namespace:leveldb
+NewErrorIterator	iterator.cc	/^Iterator* NewErrorIterator(const Status& status) {$/;"	f	namespace:leveldb
+NewIterator	block.cc	/^Iterator* Block::NewIterator(const Comparator* cmp) {$/;"	f	class:leveldb::Block
+NewIterator	table.cc	/^Iterator* Table::NewIterator(const ReadOptions& options) const {$/;"	f	class:leveldb::Table
+NewIterator	table_test.cc	/^  virtual Iterator* NewIterator() const {$/;"	f	class:leveldb::BlockConstructor
+NewIterator	table_test.cc	/^  virtual Iterator* NewIterator() const {$/;"	f	class:leveldb::DBConstructor
+NewIterator	table_test.cc	/^  virtual Iterator* NewIterator() const {$/;"	f	class:leveldb::MemTableConstructor
+NewIterator	table_test.cc	/^  virtual Iterator* NewIterator() const {$/;"	f	class:leveldb::TableConstructor
+NewMergingIterator	merger.cc	/^Iterator* NewMergingIterator(const Comparator* cmp, Iterator** list, int n) {$/;"	f	namespace:leveldb
+NewTwoLevelIterator	two_level_iterator.cc	/^Iterator* NewTwoLevelIterator($/;"	f	namespace:leveldb
+Next	block.cc	/^  virtual void Next() {$/;"	f	class:leveldb::Block::Iter
+Next	iterator.cc	/^  virtual void Next() { assert(false); }$/;"	f	class:leveldb::__anon1::EmptyIterator
+Next	iterator_wrapper.h	/^  void Next()               { assert(iter_); iter_->Next();        Update(); }$/;"	f	class:leveldb::IteratorWrapper
+Next	merger.cc	/^  virtual void Next() {$/;"	f	class:leveldb::__anon3::MergingIterator
+Next	table_test.cc	/^  virtual void Next() { iter_->Next(); }$/;"	f	class:leveldb::KeyConvertingIterator
+Next	two_level_iterator.cc	/^void TwoLevelIterator::Next() {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+NextEntryOffset	block.cc	/^  inline uint32_t NextEntryOffset() const {$/;"	f	class:leveldb::Block::Iter	file:
+NumEntries	table_builder.cc	/^uint64_t TableBuilder::NumEntries() const {$/;"	f	class:leveldb::TableBuilder
+NumRestarts	block.cc	/^inline uint32_t Block::NumRestarts() const {$/;"	f	class:leveldb::Block
+Open	table.cc	/^Status Table::Open(const Options& options,$/;"	f	class:leveldb::Table
+ParseNextKey	block.cc	/^  bool ParseNextKey() {$/;"	f	class:leveldb::Block::Iter	file:
+PickRandomKey	table_test.cc	/^  std::string PickRandomKey(Random* rnd, const std::vector<std::string>& keys) {$/;"	f	class:leveldb::Harness
+Prev	block.cc	/^  virtual void Prev() {$/;"	f	class:leveldb::Block::Iter
+Prev	iterator.cc	/^  virtual void Prev() { assert(false); }$/;"	f	class:leveldb::__anon1::EmptyIterator
+Prev	iterator_wrapper.h	/^  void Prev()               { assert(iter_); iter_->Prev();        Update(); }$/;"	f	class:leveldb::IteratorWrapper
+Prev	merger.cc	/^  virtual void Prev() {$/;"	f	class:leveldb::__anon3::MergingIterator
+Prev	table_test.cc	/^  virtual void Prev() { iter_->Prev(); }$/;"	f	class:leveldb::KeyConvertingIterator
+Prev	two_level_iterator.cc	/^void TwoLevelIterator::Prev() {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+Read	table_test.cc	/^  virtual Status Read(uint64_t offset, size_t n, Slice* result,$/;"	f	class:leveldb::StringSource
+ReadBlock	format.cc	/^Status ReadBlock(RandomAccessFile* file,$/;"	f	namespace:leveldb
+ReadFilter	table.cc	/^void Table::ReadFilter(const Slice& filter_handle_value) {$/;"	f	class:leveldb::Table
+ReadMeta	table.cc	/^void Table::ReadMeta(const Footer& footer) {$/;"	f	class:leveldb::Table
+RegisterCleanup	iterator.cc	/^void Iterator::RegisterCleanup(CleanupFunction func, void* arg1, void* arg2) {$/;"	f	class:leveldb::Iterator
+ReleaseBlock	table.cc	/^static void ReleaseBlock(void* arg, void* h) {$/;"	f	namespace:leveldb
+Rep	table.cc	/^struct Table::Rep {$/;"	s	class:leveldb::Table	file:
+Rep	table_builder.cc	/^  Rep(const Options& opt, WritableFile* f)$/;"	f	struct:leveldb::TableBuilder::Rep
+Rep	table_builder.cc	/^struct TableBuilder::Rep {$/;"	s	class:leveldb::TableBuilder	file:
+Reset	block_builder.cc	/^void BlockBuilder::Reset() {$/;"	f	class:leveldb::BlockBuilder
+Reset	table_test.cc	/^  void Reset() {$/;"	f	class:leveldb::TableConstructor	file:
+Reverse	table_test.cc	/^static std::string Reverse(const Slice& key) {$/;"	f	namespace:leveldb
+ReverseKeyComparator	table_test.cc	/^class ReverseKeyComparator : public Comparator {$/;"	c	namespace:leveldb::__anon4	file:
+STLLessThan	table_test.cc	/^  STLLessThan() : cmp(BytewiseComparator()) { }$/;"	f	struct:leveldb::__anon5::STLLessThan
+STLLessThan	table_test.cc	/^  STLLessThan(const Comparator* c) : cmp(c) { }$/;"	f	struct:leveldb::__anon5::STLLessThan
+STLLessThan	table_test.cc	/^struct STLLessThan {$/;"	s	namespace:leveldb::__anon5	file:
+STORAGE_LEVELDB_TABLE_BLOCK_BUILDER_H_	block_builder.h	6;"	d
+STORAGE_LEVELDB_TABLE_BLOCK_H_	block.h	6;"	d
+STORAGE_LEVELDB_TABLE_FILTER_BLOCK_H_	filter_block.h	10;"	d
+STORAGE_LEVELDB_TABLE_FORMAT_H_	format.h	6;"	d
+STORAGE_LEVELDB_TABLE_ITERATOR_WRAPPER_H_	iterator_wrapper.h	6;"	d
+STORAGE_LEVELDB_TABLE_MERGER_H_	merger.h	6;"	d
+STORAGE_LEVELDB_TABLE_TWO_LEVEL_ITERATOR_H_	two_level_iterator.h	6;"	d
+SaveError	two_level_iterator.cc	/^  void SaveError(const Status& s) {$/;"	f	class:leveldb::__anon2::TwoLevelIterator	file:
+Seek	block.cc	/^  virtual void Seek(const Slice& target) {$/;"	f	class:leveldb::Block::Iter
+Seek	iterator.cc	/^  virtual void Seek(const Slice& target) { }$/;"	f	class:leveldb::__anon1::EmptyIterator
+Seek	iterator_wrapper.h	/^  void Seek(const Slice& k) { assert(iter_); iter_->Seek(k);       Update(); }$/;"	f	class:leveldb::IteratorWrapper
+Seek	merger.cc	/^  virtual void Seek(const Slice& target) {$/;"	f	class:leveldb::__anon3::MergingIterator
+Seek	table_test.cc	/^  virtual void Seek(const Slice& target) {$/;"	f	class:leveldb::KeyConvertingIterator
+Seek	two_level_iterator.cc	/^void TwoLevelIterator::Seek(const Slice& target) {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+SeekToFirst	block.cc	/^  virtual void SeekToFirst() {$/;"	f	class:leveldb::Block::Iter
+SeekToFirst	iterator.cc	/^  virtual void SeekToFirst() { }$/;"	f	class:leveldb::__anon1::EmptyIterator
+SeekToFirst	iterator_wrapper.h	/^  void SeekToFirst()        { assert(iter_); iter_->SeekToFirst(); Update(); }$/;"	f	class:leveldb::IteratorWrapper
+SeekToFirst	merger.cc	/^  virtual void SeekToFirst() {$/;"	f	class:leveldb::__anon3::MergingIterator
+SeekToFirst	table_test.cc	/^  virtual void SeekToFirst() { iter_->SeekToFirst(); }$/;"	f	class:leveldb::KeyConvertingIterator
+SeekToFirst	two_level_iterator.cc	/^void TwoLevelIterator::SeekToFirst() {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+SeekToLast	block.cc	/^  virtual void SeekToLast() {$/;"	f	class:leveldb::Block::Iter
+SeekToLast	iterator.cc	/^  virtual void SeekToLast() { }$/;"	f	class:leveldb::__anon1::EmptyIterator
+SeekToLast	iterator_wrapper.h	/^  void SeekToLast()         { assert(iter_); iter_->SeekToLast();  Update(); }$/;"	f	class:leveldb::IteratorWrapper
+SeekToLast	merger.cc	/^  virtual void SeekToLast() {$/;"	f	class:leveldb::__anon3::MergingIterator
+SeekToLast	table_test.cc	/^  virtual void SeekToLast() { iter_->SeekToLast(); }$/;"	f	class:leveldb::KeyConvertingIterator
+SeekToLast	two_level_iterator.cc	/^void TwoLevelIterator::SeekToLast() {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+SeekToRestartPoint	block.cc	/^  void SeekToRestartPoint(uint32_t index) {$/;"	f	class:leveldb::Block::Iter	file:
+Set	iterator_wrapper.h	/^  void Set(Iterator* iter) {$/;"	f	class:leveldb::IteratorWrapper
+SetDataIterator	two_level_iterator.cc	/^void TwoLevelIterator::SetDataIterator(Iterator* data_iter) {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+Size	table_test.cc	/^  uint64_t Size() const { return contents_.size(); }$/;"	f	class:leveldb::StringSource
+SkipEmptyDataBlocksBackward	two_level_iterator.cc	/^void TwoLevelIterator::SkipEmptyDataBlocksBackward() {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+SkipEmptyDataBlocksForward	two_level_iterator.cc	/^void TwoLevelIterator::SkipEmptyDataBlocksForward() {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+SnappyCompressionSupported	table_test.cc	/^static bool SnappyCompressionSupported() {$/;"	f	namespace:leveldb
+StartBlock	filter_block.cc	/^void FilterBlockBuilder::StartBlock(uint64_t block_offset) {$/;"	f	class:leveldb::FilterBlockBuilder
+StringSink	table_test.cc	/^class StringSink: public WritableFile {$/;"	c	namespace:leveldb	file:
+StringSource	table_test.cc	/^  StringSource(const Slice& contents)$/;"	f	class:leveldb::StringSource
+StringSource	table_test.cc	/^class StringSource: public RandomAccessFile {$/;"	c	namespace:leveldb	file:
+Sync	table_test.cc	/^  virtual Status Sync() { return Status::OK(); }$/;"	f	class:leveldb::StringSink
+TABLE_TEST	table_test.cc	/^  TABLE_TEST,$/;"	e	enum:leveldb::TestType	file:
+TEST	filter_block_test.cc	/^TEST(FilterBlockTest, EmptyBuilder) {$/;"	f	namespace:leveldb
+TEST	filter_block_test.cc	/^TEST(FilterBlockTest, MultiChunk) {$/;"	f	namespace:leveldb
+TEST	filter_block_test.cc	/^TEST(FilterBlockTest, SingleChunk) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(Harness, Empty) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(Harness, Randomized) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(Harness, RandomizedLongDB) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(Harness, SimpleEmptyKey) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(Harness, SimpleMulti) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(Harness, SimpleSingle) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(Harness, SimpleSpecialKey) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(Harness, ZeroRestartPointsInBlock) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(MemTableTest, Simple) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(TableTest, ApproximateOffsetOfCompressed) {$/;"	f	namespace:leveldb
+TEST	table_test.cc	/^TEST(TableTest, ApproximateOffsetOfPlain) {$/;"	f	namespace:leveldb
+TableBuilder	table_builder.cc	/^TableBuilder::TableBuilder(const Options& options, WritableFile* file)$/;"	f	class:leveldb::TableBuilder
+TableConstructor	table_test.cc	/^  TableConstructor(const Comparator* cmp)$/;"	f	class:leveldb::TableConstructor
+TableConstructor	table_test.cc	/^class TableConstructor: public Constructor {$/;"	c	namespace:leveldb	file:
+TableTest	table_test.cc	/^class TableTest { };$/;"	c	namespace:leveldb	file:
+Test	table_test.cc	/^  void Test(Random* rnd) {$/;"	f	class:leveldb::Harness
+TestArgs	table_test.cc	/^struct TestArgs {$/;"	s	namespace:leveldb	file:
+TestBackwardScan	table_test.cc	/^  void TestBackwardScan(const std::vector<std::string>& keys,$/;"	f	class:leveldb::Harness
+TestForwardScan	table_test.cc	/^  void TestForwardScan(const std::vector<std::string>& keys,$/;"	f	class:leveldb::Harness
+TestHashFilter	filter_block_test.cc	/^class TestHashFilter : public FilterPolicy {$/;"	c	namespace:leveldb	file:
+TestRandomAccess	table_test.cc	/^  void TestRandomAccess(Random* rnd,$/;"	f	class:leveldb::Harness
+TestType	table_test.cc	/^enum TestType {$/;"	g	namespace:leveldb	file:
+ToString	table_test.cc	/^  std::string ToString(const Iterator* it) {$/;"	f	class:leveldb::Harness
+ToString	table_test.cc	/^  std::string ToString(const KVMap& data, const KVMap::const_iterator& it) {$/;"	f	class:leveldb::Harness
+ToString	table_test.cc	/^  std::string ToString(const KVMap& data,$/;"	f	class:leveldb::Harness
+TwoLevelIterator	two_level_iterator.cc	/^TwoLevelIterator::TwoLevelIterator($/;"	f	class:leveldb::__anon2::TwoLevelIterator
+TwoLevelIterator	two_level_iterator.cc	/^class TwoLevelIterator: public Iterator {$/;"	c	namespace:leveldb::__anon2	file:
+Update	iterator_wrapper.h	/^  void Update() {$/;"	f	class:leveldb::IteratorWrapper
+Valid	block.cc	/^  virtual bool Valid() const { return current_ < restarts_; }$/;"	f	class:leveldb::Block::Iter
+Valid	iterator.cc	/^  virtual bool Valid() const { return false; }$/;"	f	class:leveldb::__anon1::EmptyIterator
+Valid	iterator_wrapper.h	/^  bool Valid() const        { return valid_; }$/;"	f	class:leveldb::IteratorWrapper
+Valid	merger.cc	/^  virtual bool Valid() const {$/;"	f	class:leveldb::__anon3::MergingIterator
+Valid	table_test.cc	/^  virtual bool Valid() const { return iter_->Valid(); }$/;"	f	class:leveldb::KeyConvertingIterator
+Valid	two_level_iterator.cc	/^  virtual bool Valid() const {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+WriteBlock	table_builder.cc	/^void TableBuilder::WriteBlock(BlockBuilder* block, BlockHandle* handle) {$/;"	f	class:leveldb::TableBuilder
+WriteRawBlock	table_builder.cc	/^void TableBuilder::WriteRawBlock(const Slice& block_contents,$/;"	f	class:leveldb::TableBuilder
+arg_	two_level_iterator.cc	/^  void* arg_;$/;"	m	class:leveldb::__anon2::TwoLevelIterator	file:
+base_lg_	filter_block.h	/^  size_t base_lg_;      \/\/ Encoding parameter (see kFilterBaseLg in .cc file)$/;"	m	class:leveldb::FilterBlockReader
+block_	table_test.cc	/^  Block* block_;$/;"	m	class:leveldb::BlockConstructor	file:
+block_function_	two_level_iterator.cc	/^  BlockFunction block_function_;$/;"	m	class:leveldb::__anon2::TwoLevelIterator	file:
+buffer_	block_builder.h	/^  std::string           buffer_;      \/\/ Destination buffer$/;"	m	class:leveldb::BlockBuilder
+cachable	format.h	/^  bool cachable;        \/\/ True iff data can be cached$/;"	m	struct:leveldb::BlockContents
+cache_id	table.cc	/^  uint64_t cache_id;$/;"	m	struct:leveldb::Table::Rep	file:
+children_	merger.cc	/^  IteratorWrapper* children_;$/;"	m	class:leveldb::__anon3::MergingIterator	file:
+closed	table_builder.cc	/^  bool closed;          \/\/ Either Finish() or Abandon() has been called.$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+cmp	table_test.cc	/^  const Comparator* cmp;$/;"	m	struct:leveldb::__anon5::STLLessThan	file:
+comparator_	block.cc	/^  const Comparator* const comparator_;$/;"	m	class:leveldb::Block::Iter	file:
+comparator_	merger.cc	/^  const Comparator* comparator_;$/;"	m	class:leveldb::__anon3::MergingIterator	file:
+comparator_	table_test.cc	/^  const Comparator* comparator_;$/;"	m	class:leveldb::BlockConstructor	file:
+comparator_	table_test.cc	/^  const Comparator* comparator_;$/;"	m	class:leveldb::DBConstructor	file:
+compressed_output	table_builder.cc	/^  std::string compressed_output;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+constructor_	table_test.cc	/^  Constructor* constructor_;$/;"	m	class:leveldb::Harness	file:
+contents	table_test.cc	/^  const std::string& contents() const { return contents_; }$/;"	f	class:leveldb::StringSink
+contents_	table_test.cc	/^  std::string contents_;$/;"	m	class:leveldb::StringSink	file:
+contents_	table_test.cc	/^  std::string contents_;$/;"	m	class:leveldb::StringSource	file:
+counter_	block_builder.h	/^  int                   counter_;     \/\/ Number of entries emitted since restart$/;"	m	class:leveldb::BlockBuilder
+current_	block.cc	/^  uint32_t current_;$/;"	m	class:leveldb::Block::Iter	file:
+current_	merger.cc	/^  IteratorWrapper* current_;$/;"	m	class:leveldb::__anon3::MergingIterator	file:
+data	format.h	/^  Slice data;           \/\/ Actual contents of data$/;"	m	struct:leveldb::BlockContents
+data	table_test.cc	/^  virtual const KVMap& data() { return data_; }$/;"	f	class:leveldb::Constructor
+data_	block.cc	/^  const char* const data_;      \/\/ underlying block contents$/;"	m	class:leveldb::Block::Iter	file:
+data_	block.h	/^  const char* data_;$/;"	m	class:leveldb::Block
+data_	filter_block.h	/^  const char* data_;    \/\/ Pointer to filter data (at block-start)$/;"	m	class:leveldb::FilterBlockReader
+data_	table_test.cc	/^  KVMap data_;$/;"	m	class:leveldb::Constructor	file:
+data_	table_test.cc	/^  std::string data_;$/;"	m	class:leveldb::BlockConstructor	file:
+data_block	table_builder.cc	/^  BlockBuilder data_block;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+data_block_handle_	two_level_iterator.cc	/^  std::string data_block_handle_;$/;"	m	class:leveldb::__anon2::TwoLevelIterator	file:
+data_iter_	two_level_iterator.cc	/^  IteratorWrapper data_iter_; \/\/ May be NULL$/;"	m	class:leveldb::__anon2::TwoLevelIterator	file:
+db	table_test.cc	/^  DB* db() const { return constructor_->db(); }$/;"	f	class:leveldb::Harness
+db	table_test.cc	/^  virtual DB* db() const { return NULL; }  \/\/ Overridden in DBConstructor$/;"	f	class:leveldb::Constructor
+db	table_test.cc	/^  virtual DB* db() const { return db_; }$/;"	f	class:leveldb::DBConstructor
+db_	table_test.cc	/^  DB* db_;$/;"	m	class:leveldb::DBConstructor	file:
+direction_	merger.cc	/^  Direction direction_;$/;"	m	class:leveldb::__anon3::MergingIterator	file:
+empty	block_builder.h	/^  bool empty() const {$/;"	f	class:leveldb::BlockBuilder
+file	table.cc	/^  RandomAccessFile* file;$/;"	m	struct:leveldb::Table::Rep	file:
+file	table_builder.cc	/^  WritableFile* file;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+filter	table.cc	/^  FilterBlockReader* filter;$/;"	m	struct:leveldb::Table::Rep	file:
+filter_block	table_builder.cc	/^  FilterBlockBuilder* filter_block;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+filter_data	table.cc	/^  const char* filter_data;$/;"	m	struct:leveldb::Table::Rep	file:
+filter_offsets_	filter_block.h	/^  std::vector<uint32_t> filter_offsets_;$/;"	m	class:leveldb::FilterBlockBuilder
+finished_	block_builder.h	/^  bool                  finished_;    \/\/ Has Finish() been called?$/;"	m	class:leveldb::BlockBuilder
+heap_allocated	format.h	/^  bool heap_allocated;  \/\/ True iff caller should delete[] data.data()$/;"	m	struct:leveldb::BlockContents
+index_block	table.cc	/^  Block* index_block;$/;"	m	struct:leveldb::Table::Rep	file:
+index_block	table_builder.cc	/^  BlockBuilder index_block;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+index_block_options	table_builder.cc	/^  Options index_block_options;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+index_handle	format.h	/^  const BlockHandle& index_handle() const {$/;"	f	class:leveldb::Footer
+index_handle_	format.h	/^  BlockHandle index_handle_;$/;"	m	class:leveldb::Footer
+index_iter_	two_level_iterator.cc	/^  IteratorWrapper index_iter_;$/;"	m	class:leveldb::__anon2::TwoLevelIterator	file:
+internal_comparator_	table_test.cc	/^  InternalKeyComparator internal_comparator_;$/;"	m	class:leveldb::MemTableConstructor	file:
+iter	iterator_wrapper.h	/^  Iterator* iter() const { return iter_; }$/;"	f	class:leveldb::IteratorWrapper
+iter_	iterator_wrapper.h	/^  Iterator* iter_;$/;"	m	class:leveldb::IteratorWrapper
+iter_	table_test.cc	/^  Iterator* iter_;$/;"	m	class:leveldb::KeyConvertingIterator	file:
+kBlockTrailerSize	format.h	/^static const size_t kBlockTrailerSize = 5;$/;"	m	namespace:leveldb
+kEncodedLength	format.h	/^    kEncodedLength = 2*BlockHandle::kMaxEncodedLength + 8$/;"	e	enum:leveldb::Footer::__anon7
+kFilterBase	filter_block.cc	/^static const size_t kFilterBase = 1 << kFilterBaseLg;$/;"	m	namespace:leveldb	file:
+kFilterBaseLg	filter_block.cc	/^static const size_t kFilterBaseLg = 11;$/;"	m	namespace:leveldb	file:
+kForward	merger.cc	/^    kForward,$/;"	e	enum:leveldb::__anon3::MergingIterator::Direction	file:
+kMaxEncodedLength	format.h	/^  enum { kMaxEncodedLength = 10 + 10 };$/;"	e	enum:leveldb::BlockHandle::__anon6
+kNumTestArgs	table_test.cc	/^static const int kNumTestArgs = sizeof(kTestArgList) \/ sizeof(kTestArgList[0]);$/;"	m	namespace:leveldb	file:
+kReverse	merger.cc	/^    kReverse$/;"	e	enum:leveldb::__anon3::MergingIterator::Direction	file:
+kTableMagicNumber	format.h	/^static const uint64_t kTableMagicNumber = 0xdb4775248b80fb57ull;$/;"	m	namespace:leveldb
+kTestArgList	table_test.cc	/^static const TestArgs kTestArgList[] = {$/;"	m	namespace:leveldb	file:
+key	block.cc	/^  virtual Slice key() const {$/;"	f	class:leveldb::Block::Iter
+key	iterator.cc	/^  Slice key() const { assert(false); return Slice(); }$/;"	f	class:leveldb::__anon1::EmptyIterator
+key	iterator_wrapper.h	/^  Slice key() const         { assert(Valid()); return key_; }$/;"	f	class:leveldb::IteratorWrapper
+key	merger.cc	/^  virtual Slice key() const {$/;"	f	class:leveldb::__anon3::MergingIterator
+key	table_test.cc	/^  virtual Slice key() const {$/;"	f	class:leveldb::KeyConvertingIterator
+key	two_level_iterator.cc	/^  virtual Slice key() const {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+key_	block.cc	/^  std::string key_;$/;"	m	class:leveldb::Block::Iter	file:
+key_	iterator_wrapper.h	/^  Slice key_;$/;"	m	class:leveldb::IteratorWrapper
+keys_	filter_block.h	/^  std::string keys_;              \/\/ Flattened key contents$/;"	m	class:leveldb::FilterBlockBuilder
+last_key	table_builder.cc	/^  std::string last_key;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+last_key_	block_builder.h	/^  std::string           last_key_;$/;"	m	class:leveldb::BlockBuilder
+leveldb	block.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	block.h	/^namespace leveldb {$/;"	n
+leveldb	block_builder.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	block_builder.h	/^namespace leveldb {$/;"	n
+leveldb	filter_block.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	filter_block.h	/^namespace leveldb {$/;"	n
+leveldb	filter_block_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	format.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	format.h	/^namespace leveldb {$/;"	n
+leveldb	iterator.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	iterator_wrapper.h	/^namespace leveldb {$/;"	n
+leveldb	merger.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	merger.h	/^namespace leveldb {$/;"	n
+leveldb	table.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	table_builder.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	table_test.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	two_level_iterator.cc	/^namespace leveldb {$/;"	n	file:
+leveldb	two_level_iterator.h	/^namespace leveldb {$/;"	n
+main	filter_block_test.cc	/^int main(int argc, char** argv) {$/;"	f
+main	table_test.cc	/^int main(int argc, char** argv) {$/;"	f
+memtable_	table_test.cc	/^  MemTable* memtable_;$/;"	m	class:leveldb::MemTableConstructor	file:
+metaindex_handle	format.h	/^  const BlockHandle& metaindex_handle() const { return metaindex_handle_; }$/;"	f	class:leveldb::Footer
+metaindex_handle	table.cc	/^  BlockHandle metaindex_handle;  \/\/ Handle to metaindex_block: saved from footer$/;"	m	struct:leveldb::Table::Rep	file:
+metaindex_handle_	format.h	/^  BlockHandle metaindex_handle_;$/;"	m	class:leveldb::Footer
+n_	merger.cc	/^  int n_;$/;"	m	class:leveldb::__anon3::MergingIterator	file:
+num_	filter_block.h	/^  size_t num_;          \/\/ Number of entries in offset array$/;"	m	class:leveldb::FilterBlockReader
+num_entries	table_builder.cc	/^  int64_t num_entries;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+num_restarts_	block.cc	/^  uint32_t const num_restarts_; \/\/ Number of uint32_t entries in restart array$/;"	m	class:leveldb::Block::Iter	file:
+offset	format.h	/^  uint64_t offset() const { return offset_; }$/;"	f	class:leveldb::BlockHandle
+offset	table_builder.cc	/^  uint64_t offset;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+offset_	filter_block.h	/^  const char* offset_;  \/\/ Pointer to beginning of offset array (at block-end)$/;"	m	class:leveldb::FilterBlockReader
+offset_	format.h	/^  uint64_t offset_;$/;"	m	class:leveldb::BlockHandle
+operator ()	table_test.cc	/^  bool operator()(const std::string& a, const std::string& b) const {$/;"	f	struct:leveldb::__anon5::STLLessThan
+options	table.cc	/^  Options options;$/;"	m	struct:leveldb::Table::Rep	file:
+options	table_builder.cc	/^  Options options;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+options_	block_builder.h	/^  const Options*        options_;$/;"	m	class:leveldb::BlockBuilder
+options_	table_test.cc	/^  Options options_;$/;"	m	class:leveldb::Harness	file:
+options_	two_level_iterator.cc	/^  const ReadOptions options_;$/;"	m	class:leveldb::__anon2::TwoLevelIterator	file:
+owned_	block.h	/^  bool owned_;                  \/\/ Block owns data_[]$/;"	m	class:leveldb::Block
+pending_handle	table_builder.cc	/^  BlockHandle pending_handle;  \/\/ Handle to add to index block$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+pending_index_entry	table_builder.cc	/^  bool pending_index_entry;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+policy_	filter_block.h	/^  const FilterPolicy* policy_;$/;"	m	class:leveldb::FilterBlockBuilder
+policy_	filter_block.h	/^  const FilterPolicy* policy_;$/;"	m	class:leveldb::FilterBlockReader
+policy_	filter_block_test.cc	/^  TestHashFilter policy_;$/;"	m	class:leveldb::FilterBlockTest	file:
+restart_index_	block.cc	/^  uint32_t restart_index_;  \/\/ Index of restart block in which current_ falls$/;"	m	class:leveldb::Block::Iter	file:
+restart_interval	table_test.cc	/^  int restart_interval;$/;"	m	struct:leveldb::TestArgs	file:
+restart_offset_	block.h	/^  uint32_t restart_offset_;     \/\/ Offset in data_ of restart array$/;"	m	class:leveldb::Block
+restarts_	block.cc	/^  uint32_t const restarts_;     \/\/ Offset of restart array (list of fixed32)$/;"	m	class:leveldb::Block::Iter	file:
+restarts_	block_builder.h	/^  std::vector<uint32_t> restarts_;    \/\/ Restart points$/;"	m	class:leveldb::BlockBuilder
+result_	filter_block.h	/^  std::string result_;            \/\/ Filter data computed so far$/;"	m	class:leveldb::FilterBlockBuilder
+reverse_compare	table_test.cc	/^  bool reverse_compare;$/;"	m	struct:leveldb::TestArgs	file:
+reverse_key_comparator	table_test.cc	/^static ReverseKeyComparator reverse_key_comparator;$/;"	m	namespace:leveldb	file:
+set_index_handle	format.h	/^  void set_index_handle(const BlockHandle& h) {$/;"	f	class:leveldb::Footer
+set_metaindex_handle	format.h	/^  void set_metaindex_handle(const BlockHandle& h) { metaindex_handle_ = h; }$/;"	f	class:leveldb::Footer
+set_offset	format.h	/^  void set_offset(uint64_t offset) { offset_ = offset; }$/;"	f	class:leveldb::BlockHandle
+set_size	format.h	/^  void set_size(uint64_t size) { size_ = size; }$/;"	f	class:leveldb::BlockHandle
+size	block.h	/^  size_t size() const { return size_; }$/;"	f	class:leveldb::Block
+size	format.h	/^  uint64_t size() const { return size_; }$/;"	f	class:leveldb::BlockHandle
+size_	block.h	/^  size_t size_;$/;"	m	class:leveldb::Block
+size_	format.h	/^  uint64_t size_;$/;"	m	class:leveldb::BlockHandle
+source_	table_test.cc	/^  StringSource* source_;$/;"	m	class:leveldb::TableConstructor	file:
+start_	filter_block.h	/^  std::vector<size_t> start_;     \/\/ Starting index in keys_ of each key$/;"	m	class:leveldb::FilterBlockBuilder
+status	block.cc	/^  virtual Status status() const { return status_; }$/;"	f	class:leveldb::Block::Iter
+status	iterator.cc	/^  virtual Status status() const { return status_; }$/;"	f	class:leveldb::__anon1::EmptyIterator
+status	iterator_wrapper.h	/^  Status status() const     { assert(iter_); return iter_->status(); }$/;"	f	class:leveldb::IteratorWrapper
+status	merger.cc	/^  virtual Status status() const {$/;"	f	class:leveldb::__anon3::MergingIterator
+status	table.cc	/^  Status status;$/;"	m	struct:leveldb::Table::Rep	file:
+status	table_builder.cc	/^  Status status;$/;"	m	struct:leveldb::TableBuilder::Rep	file:
+status	table_builder.cc	/^Status TableBuilder::status() const {$/;"	f	class:leveldb::TableBuilder
+status	table_test.cc	/^  virtual Status status() const {$/;"	f	class:leveldb::KeyConvertingIterator
+status	two_level_iterator.cc	/^  virtual Status status() const {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+status_	block.cc	/^  Status status_;$/;"	m	class:leveldb::Block::Iter	file:
+status_	iterator.cc	/^  Status status_;$/;"	m	class:leveldb::__anon1::EmptyIterator	file:
+status_	table_test.cc	/^  mutable Status status_;$/;"	m	class:leveldb::KeyConvertingIterator	file:
+status_	two_level_iterator.cc	/^  Status status_;$/;"	m	class:leveldb::__anon2::TwoLevelIterator	file:
+table_	table_test.cc	/^  Table* table_;$/;"	m	class:leveldb::TableConstructor	file:
+tmp_keys_	filter_block.h	/^  std::vector<Slice> tmp_keys_;   \/\/ policy_->CreateFilter() argument$/;"	m	class:leveldb::FilterBlockBuilder
+type	table_test.cc	/^  TestType type;$/;"	m	struct:leveldb::TestArgs	file:
+valid_	iterator_wrapper.h	/^  bool valid_;$/;"	m	class:leveldb::IteratorWrapper
+value	block.cc	/^  virtual Slice value() const {$/;"	f	class:leveldb::Block::Iter
+value	iterator.cc	/^  Slice value() const { assert(false); return Slice(); }$/;"	f	class:leveldb::__anon1::EmptyIterator
+value	iterator_wrapper.h	/^  Slice value() const       { assert(Valid()); return iter_->value(); }$/;"	f	class:leveldb::IteratorWrapper
+value	merger.cc	/^  virtual Slice value() const {$/;"	f	class:leveldb::__anon3::MergingIterator
+value	table_test.cc	/^  virtual Slice value() const { return iter_->value(); }$/;"	f	class:leveldb::KeyConvertingIterator
+value	two_level_iterator.cc	/^  virtual Slice value() const {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
+value_	block.cc	/^  Slice value_;$/;"	m	class:leveldb::Block::Iter	file:
+~Block	block.cc	/^Block::~Block() {$/;"	f	class:leveldb::Block
+~BlockConstructor	table_test.cc	/^  ~BlockConstructor() {$/;"	f	class:leveldb::BlockConstructor
+~Constructor	table_test.cc	/^  virtual ~Constructor() { }$/;"	f	class:leveldb::Constructor
+~DBConstructor	table_test.cc	/^  ~DBConstructor() {$/;"	f	class:leveldb::DBConstructor
+~Harness	table_test.cc	/^  ~Harness() {$/;"	f	class:leveldb::Harness
+~Iterator	iterator.cc	/^Iterator::~Iterator() {$/;"	f	class:leveldb::Iterator
+~IteratorWrapper	iterator_wrapper.h	/^  ~IteratorWrapper() { delete iter_; }$/;"	f	class:leveldb::IteratorWrapper
+~KeyConvertingIterator	table_test.cc	/^  virtual ~KeyConvertingIterator() { delete iter_; }$/;"	f	class:leveldb::KeyConvertingIterator
+~MemTableConstructor	table_test.cc	/^  ~MemTableConstructor() {$/;"	f	class:leveldb::MemTableConstructor
+~MergingIterator	merger.cc	/^  virtual ~MergingIterator() {$/;"	f	class:leveldb::__anon3::MergingIterator
+~Rep	table.cc	/^  ~Rep() {$/;"	f	struct:leveldb::Table::Rep
+~StringSink	table_test.cc	/^  ~StringSink() { }$/;"	f	class:leveldb::StringSink
+~StringSource	table_test.cc	/^  virtual ~StringSource() { }$/;"	f	class:leveldb::StringSource
+~Table	table.cc	/^Table::~Table() {$/;"	f	class:leveldb::Table
+~TableBuilder	table_builder.cc	/^TableBuilder::~TableBuilder() {$/;"	f	class:leveldb::TableBuilder
+~TableConstructor	table_test.cc	/^  ~TableConstructor() {$/;"	f	class:leveldb::TableConstructor
+~TwoLevelIterator	two_level_iterator.cc	/^TwoLevelIterator::~TwoLevelIterator() {$/;"	f	class:leveldb::__anon2::TwoLevelIterator
