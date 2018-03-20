@@ -1,0 +1,14 @@
+# .bashrc
+
+# Source global definitions
+if [ -f /etc/bashrc ]; then
+	. /etc/bashrc
+fi
+
+alias rm='rm -i'
+alias lrt='ls -lrt'
+alias vi='vim'
+alias la='ls -a'
+alias grepn='grep -n --color=auto'
+
+# User specific aliases and functions

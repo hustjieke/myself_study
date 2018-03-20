@@ -1,0 +1,35 @@
+set cindent
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set expandtab
+set hlsearch
+set encoding=utf-8 fileencoding=utf-8
+set nu
+set nocompatible
+filetype on
+filetype plugin indent on
+syntax on
+set autoindent
+set smartindent
+set showmatch
+set incsearch
+set nobackup
+imap {} {}<ESC>i<CR><ESC>kl
+imap () ()<ESC>i
+imap <> <><ESC>i
+imap [] []<ESC>i
+imap "" ""<ESC>i
+imap '' ''<ESC>i
+imap <F3> <ESC>la
+"set tags+=/home/gaoriyao/Merge/feature_Datatype_Interval_Timestamp_20160722/be/include/tags
+"set tags+=/home/gaoriyao/Merge/feature_Datatype_Interval_Timestamp_20160722/be/src/tags
+set tags+=/home/gaoriyao/Merge/trunk/be/gen_src/gen-cpp/tags
+"set tags+=/home/gaoriyao/release_2.0/be/gen_src/gen-cpp/tags
+"set tags+=/home/gaoriyao/release_2.0/be/include/tags
+"set tags+=/home/gaoriyao/release_2.0/be/src/tags
+set tags+=../../tags
+set tags+=../../../tags
+set tags+=./tags
+set tags+=../tags
+

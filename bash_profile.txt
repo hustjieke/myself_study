@@ -1,0 +1,15 @@
+# .bash_profile
+
+# Get the aliases and functions
+if [ -f ~/.bashrc ]; then
+	. ~/.bashrc
+fi
+
+# User specific environment and startup programs
+
+PATH=$PATH:$HOME/bin:.:$HOME/lrzsz/bin
+export PATH
+
+LIBRARY_PATH="/usr/local/lib/"
+LIBRARY_PATH+="/root/mysoftware/"
+export LIBRARY_PATH
