@@ -192,37 +192,42 @@ typedef unsigned short u_short;
 /* EVLIST_X_ Private space: 0x1000-0xf000 */
 #define EVLIST_ALL	(0xf000 | 0x9f)
 
-#define EV_TIMEOUT	0x01
-#define EV_READ		0x02
-#define EV_WRITE	0x04
-#define EV_SIGNAL	0x08
-#define EV_PERSIST	0x10	/* Persistant event */
+// 事件类型可以用“|”运算符进行组合,但是信号和i/o事件不能同时设置
+#define EV_TIMEOUT	0x01  // 定时事件
+#define EV_READ		0x02  // i/o事件
+#define EV_WRITE	0x04  // i/o事件
+#define EV_SIGNAL	0x08  // 信号
+#define EV_PERSIST	0x10	/* Persistant event辅助选项,表明是一个永久事件 */
 
 /* Fix so that ppl dont have to run with <sys/queue.h> */
 #ifndef TAILQ_ENTRY
 #define _EVENT_DEFINED_TQENTRY
 #define TAILQ_ENTRY(type)						\
 struct {								\
-	struct type *tqe_next;	/* next element */			\
-	struct type **tqe_prev;	/* address of previous next element */	\
+	struct type *tqe_next;	/* next element 下一个节点指针*/			\
+	struct type **tqe_prev;	/* 当前节点address of previous next element */	\
 }
 #endif /* !TAILQ_ENTRY */
 
 struct event_base;
 struct event {
-	TAILQ_ENTRY (event) ev_next;
-	TAILQ_ENTRY (event) ev_active_next;
-	TAILQ_ENTRY (event) ev_signal_next;
+	TAILQ_ENTRY (event) ev_next;  // 已注册i/o事件双链表,ev_next就是该i/o事件中此链表中位置
+	TAILQ_ENTRY (event) ev_active_next;  // 激活事件双链表,遍历该链表执行调度
+	TAILQ_ENTRY (event) ev_signal_next;  // signal事件在该双链表中的位置
+    // event在小根堆中的索引和超时值,libevent使用小根堆来管理定时事件
 	unsigned int min_heap_idx;	/* for managing timeouts */
 
-	struct event_base *ev_base;
+	struct event_base *ev_base;  // ev_base所属的反应堆实例
 
-	int ev_fd;
+	int ev_fd;  // 对于i/o事件,是绑定的文件描述符,对于signal事件,是绑定的信号
+    // event关注的事件类型,可以是一下3中类型
+    // i/o 事件：EV_WRITE和EV_READ
+    // 可以看出,libevent使用event结构体将这三种事件的处理统一起来
 	short ev_events;
 	short ev_ncalls;
 	short *ev_pncalls;	/* Allows deletes in callback */
 
-	struct timeval ev_timeout;
+	struct timeval ev_timeout;  // timeout事件
 
 	int ev_pri;		/* smaller numbers are higher priority */
 
